@@ -1,0 +1,173 @@
+.product {
+	display: flex;
+	flex-direction: column;
+	width: 1440px;
+	margin: 80px auto;
+
+	&-text {
+		display: flex;
+		justify-content: space-between;
+
+		p {
+			font-size: 24px;
+			font-weight: 600;
+		}
+
+		button {
+			border: none;
+			background-color: white;
+			display: flex;
+			align-items: center;
+			font-size: 16px;
+			font-weight: 500;
+			color: #FF4D4D;
+
+			span {
+				height: auto;
+				display: flex;
+			}
+		}
+	}
+
+	&-block {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		max-width: 100%;
+		gap: 20px;
+
+		.product-main {
+			max-width: 232px;
+			padding: 20px;
+			background-color: #F6F7FA;
+			border-radius: 12px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			gap: 20px;
+
+			&-info {
+
+				p,
+				h4,
+				h2 {
+					margin: 0;
+				}
+
+				p {
+					display: flex;
+					align-items: center;
+					color: #7E8794;
+					font-size: 14px;
+					font-weight: 400;
+
+					span {
+						display: flex;
+						align-items: center;
+						color: #30D170;
+					}
+				}
+
+				h4 {
+					width: 75%;
+					font-size: 20px;
+					font-weight: 600;
+					margin: 12px 0;
+				}
+
+				h2 {
+					font-size: 20px;
+					font-weight: 700;
+				}
+
+				.price {
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+
+					.buttons {
+						display: flex;
+						gap: 12px;
+
+						button {
+							background-color: #FDFDFD;
+
+							img {
+								width: 50%;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.product {
+		width: 95%;
+		margin: 30px auto;
+
+		&-text {
+			p {
+				font-size: 16px;
+			}
+		}
+
+		&-block {
+			display: flex;
+			flex-wrap: nowrap;
+			overflow: scroll;
+			gap: 20px;
+
+			.product-main {
+				max-width: 190px;
+				padding: 12px;
+				gap: 20px;
+
+				&-info {
+
+					p,
+					h4,
+					h2 {
+						margin: 0;
+					}
+
+					p {
+						font-size: 12px;
+					}
+
+					h4 {
+						width: 75%;
+						font-size: 14px;
+						margin: 10px 0;
+					}
+
+					h2 {
+						font-size: 16px;
+					}
+
+					.price {
+						display: flex;
+						justify-content: space-between;
+						align-items: center;
+
+						.buttons {
+							display: flex;
+							gap: 12px;
+
+							button {
+								background-color: #FDFDFD;
+
+								img {
+									width: 50%;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
