@@ -1,16 +1,14 @@
 import React,{useState} from 'react';
 import {productInfo} from "../../../arrays/product-info";
 import Rating from "@mui/material/Rating";
-import ProductRating from "../../phone-components/product-rating/product-rating";
-import Button from "@mui/material/Button";
 import crown from '../../../assets/icons/crown.png'
 import RatingInfo from "../rating-info/rating-info";
 import reStore from '../../../assets/image/reStore.png'
 import diagram from '../../../assets/icons/diagram.png'
 import VerticalAlignBottomIcon from '@mui/icons-material/VerticalAlignBottom';
 const InfoImgs = () => {
-    const [product,setProduct] = useState(productInfo)
-    const [visibleProducts, setVisibleProducts] = useState(product.slice(0, 1));
+    const [product] = useState(productInfo)
+    const [visibleProducts] = useState(product.slice(0, 1));
     return (
         <div>
             {

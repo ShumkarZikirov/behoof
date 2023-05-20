@@ -1,4 +1,4 @@
-import React,{useState,useEffect,useRef} from 'react';
+import React,{useState,useEffect} from 'react';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import Radio from '@mui/material/Radio';
 import RadioGroup from '@mui/material/RadioGroup';
@@ -15,10 +15,9 @@ import Select from "@mui/material/Select";
 import MenuItem from "@mui/material/MenuItem";
 import ButtonGroup from '@mui/material/ButtonGroup';
 import Button from '@mui/material/Button';
-import BottomNavigate from "../../main-components/bottom-navigate/bottom-navigate";
 import CloseIcon from '@mui/icons-material/Close';
 function PhoneFilter() {
-    const [age, setAge] = React.useState('')
+    const [age] = React.useState('')
     const [filter,setFilter] = useState(false)
     const [sort,setSort] = useState(false)
     const [windowWidth, setWindowWidth] = useState(window.innerWidth)
@@ -27,11 +26,6 @@ function PhoneFilter() {
         window.addEventListener('resize', handleResize)
         return () => window.removeEventListener('resize', handleResize)
     }, [])
-
-
-
-
-
     return (
         <div className={'filter'}>
                 <div className={filter? 'flex active':'flex'} onClick={() => setFilter(false)}  style={{display:windowWidth > 959?'flex':filter? 'flex':'none'}}>

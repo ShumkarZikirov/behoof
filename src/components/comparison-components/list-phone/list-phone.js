@@ -1,17 +1,24 @@
-import React,{useEffect,useState} from 'react';
+import React from 'react';
 import CloseIcon from '@mui/icons-material/Close';
 import {comparison} from "../../../arrays/comparison";
 import img2 from "../../../assets/icons/Vector.png";
 import Fab from "@mui/material/Fab";
 import './list-phone.scss'
-import  icon from '../../../assets/icons/trash.png'
+import icon from '../../../assets/icons/trash.png'
 import Button from '@mui/material/Button';
-import Box from '@mui/material/Box';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
-function ListPhone({visibleProducts,handleNextProduct,handlePreviousProduct,width,handlePreviousProductMin,handleNextProductMin}) {
+
+function ListPhone({
+                       visibleProducts,
+                       handleNextProduct,
+                       handlePreviousProduct,
+                       width,
+                       handlePreviousProductMin,
+                       handleNextProductMin
+                   }) {
 
     return (
         <div className={'listPhone'}>
@@ -20,12 +27,14 @@ function ListPhone({visibleProducts,handleNextProduct,handlePreviousProduct,widt
                 <button>Ноутбуки 2</button>
             </div>
             <div className={'listPhone-block'}>
-                {width < 959? null:<Fab className={'btn-pagin btn-left'} onClick={handlePreviousProduct} size="medium" color="secondary" aria-label="add">
-                    <ArrowBackIosIcon />
-                </Fab>}
+                {width < 959 ? null :
+                    <Fab className={'btn-pagin btn-left'} onClick={handlePreviousProduct} size="medium"
+                         color="secondary" aria-label="add">
+                        <ArrowBackIosIcon/>
+                    </Fab>}
                 {
-                    visibleProducts.map((elem,index) => {
-                        return(
+                    visibleProducts.map((elem, index) => {
+                        return (
                             <div key={index} className={'listPhone-main'}>
                                 <div className={'listPhone-img'}>
                                     <img className={'img-main'} src={elem.img} alt=""/>
@@ -42,7 +51,7 @@ function ListPhone({visibleProducts,handleNextProduct,handlePreviousProduct,widt
                                             <h4 className={'price-bottom'}>{elem.price}</h4>
                                         </div>
                                         <Fab size="small" color="inherit" aria-label="add">
-                                            <img src={img2} alt="" />
+                                            <img src={img2} alt=""/>
                                         </Fab>
                                     </div>
                                 </div>
@@ -52,21 +61,26 @@ function ListPhone({visibleProducts,handleNextProduct,handlePreviousProduct,widt
                     })
                 }
                 {
-                    comparison.length < 4?<div className={'listPhone-main add-mobile'} style={{border:'none',alignItems:'center'}}>
-                        <Button  variant="contained">Добавить товар</Button>
-                    </div>:null
+                    comparison.length < 4 ?
+                        <div className={'listPhone-main add-mobile'} style={{border: 'none', alignItems: 'center'}}>
+                            <Button variant="contained">Добавить товар</Button>
+                        </div> : null
                 }
-                {width <959? null:<Fab size="medium" onClick={handleNextProduct} className={'btn-pagin btn-right'} color="secondary" aria-label="add">
-                    <ArrowForwardIosIcon />
-                </Fab>}
+                {width < 959 ? null :
+                    <Fab size="medium" onClick={handleNextProduct} className={'btn-pagin btn-right'} color="secondary"
+                         aria-label="add">
+                        <ArrowForwardIosIcon/>
+                    </Fab>}
             </div>
 
             <div className={'add-comparison'}>
                 <div>
-                    <Button onClick={handlePreviousProductMin} variant={'text'}><span><ArrowBackIcon/></span> 1 из 3 <span><ArrowForwardIcon/></span></Button>
-                    <Button onClick={handleNextProductMin} ><span><ArrowBackIcon/></span> 2 из 3 <span><ArrowForwardIcon/></span></Button>
+                    <Button onClick={handlePreviousProductMin} variant={'text'}><span><ArrowBackIcon/></span> 1 из
+                        3 <span><ArrowForwardIcon/></span></Button>
+                    <Button onClick={handleNextProductMin}><span><ArrowBackIcon/></span> 2 из
+                        3 <span><ArrowForwardIcon/></span></Button>
                 </div>
-                <Button >Добавить товар</Button>
+                <Button>Добавить товар</Button>
             </div>
         </div>
     );

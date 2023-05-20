@@ -1,7 +1,7 @@
 import React from 'react'
 import './choice.scss'
 import {choice} from '../../../arrays/choice'
-import {Link,useNavigate} from "react-router-dom";
+import {useNavigate} from "react-router-dom";
 
 const Choice = ({text}) => {
 	const navigate = useNavigate()

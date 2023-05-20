@@ -12,7 +12,6 @@ import Button from '@mui/material/Button';
 import './product-detail.scss'
 import Pagination from '@mui/material/Pagination';
 import Stack from '@mui/material/Stack';
-import PaginationItem from '@mui/material/PaginationItem';
 function ProductDetail() {
     return (
         <div className={'productDetail'}>

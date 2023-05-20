@@ -1,6 +1,5 @@
 import React from 'react';
 import './detail-tables.scss'
-import {comparison} from "../../../arrays/comparison";
 import Rating from '@mui/material/Rating';
 import CheckIcon from '@mui/icons-material/Check';
 import CloseIcon from '@mui/icons-material/Close';

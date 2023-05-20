@@ -1,13 +1,12 @@
 import React,{useState,useLayoutEffect} from 'react';
 import {Link} from "react-router-dom";
-import icon from "../../assets/icons/export.png";
 import DeleteIcon from '@mui/icons-material/Delete';
 import './comparison-page.scss'
 import ListPhone from "../../components/comparison-components/list-phone/list-phone";
 import DetailTables from "../../components/comparison-components/detail-tables/detail-tables";
 import {comparison} from "../../arrays/comparison";
 function ComparisonPage() {
-    const [product,setProduct] = useState(comparison)
+    const [product] = useState(comparison)
     const [visibleProducts, setVisibleProducts] = useState(product.slice(0, 4));
     const [currentIndex, setCurrentIndex] = useState(0);
     const [width,setWidth] = useState(0)

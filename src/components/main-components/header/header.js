@@ -12,7 +12,6 @@ import './header.scss'
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import  {Link,useLocation,useNavigate} from 'react-router-dom'
 import  {useState} from "react";
-import SearchModal from "../../search-components/search-component";
 import {newProduct} from "../../../arrays/new";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import Fab from "@mui/material/Fab";

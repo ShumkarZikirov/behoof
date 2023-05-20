@@ -4,7 +4,6 @@ import News from "../../components/main-components/news/news";
 import Choice from "../../components/main-components/choice/choice";
 import {Link} from "react-router-dom";
 import search from "../../assets/icons/search-normal.png";
-import {newProduct} from "../../arrays/new";
 import {news} from "../../arrays/news";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 const ReviewPage = () => {
