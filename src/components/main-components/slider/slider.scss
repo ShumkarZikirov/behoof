@@ -1,0 +1,318 @@
+.slider {
+	position: relative;
+	margin-bottom: 50px;
+
+	&-main {
+		max-width: 1288px;
+		margin: auto;
+	}
+
+	.rating-block {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 20px;
+
+		.rating-main {
+			background-color: #FDFDFD;
+			border-radius: 12px;
+			width: 590px;
+			padding: 20px;
+
+			.rating-top {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+
+				&-text {
+					line-height: 1.4;
+
+					p {
+						font-size: 14px;
+						font-weight: 400;
+						color: #7E8794;
+					}
+
+					h4 {
+						font-size: 16px;
+						font-weight: 600;
+					}
+				}
+
+				&-btns {
+					display: flex;
+					align-items: center;
+					gap: 12px;
+
+					button {
+						background-color: white;
+
+						img {
+							width: 50%;
+						}
+					}
+				}
+			}
+
+			.rating-info {
+				display: flex;
+				align-items: center;
+				margin-top: 20px;
+
+				.progress {
+					display: flex;
+					flex-direction: column;
+					gap: 10px;
+					margin-left: 10px;
+
+					div {
+						p {
+							font-size: 14px;
+							font-weight: 400;
+							color: #7E8794;
+							margin-bottom: 4px;
+						}
+					}
+				}
+			}
+		}
+		p,h2,h4{
+			margin: 0;
+		}
+	}
+}
+@media only screen and (max-width: 1485px) {
+	.slider {
+		.rating-block {
+			.rating-main {
+				background-color: #FDFDFD;
+				border-radius: 12px;
+				max-width: 590px;
+				padding: 15px;
+
+				.rating-top {
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+
+					&-text {
+						line-height: 1.4;
+
+						p {
+							font-size: 14px;
+							font-weight: 400;
+							color: #7E8794;
+						}
+
+						h4 {
+							font-size: 16px;
+							font-weight: 600;
+						}
+					}
+
+					&-btns {
+						display: flex;
+						align-items: center;
+						gap: 12px;
+
+						button {
+							background-color: white;
+
+							img {
+								width: 50%;
+							}
+						}
+					}
+				}
+
+				.rating-info {
+					display: flex;
+					align-items: center;
+					margin-top: 20px;
+
+					.progress {
+						display: flex;
+						flex-direction: column;
+						gap: 10px;
+						margin-left: 10px;
+
+						div {
+							p {
+								font-size: 14px;
+								font-weight: 400;
+								color: #7E8794;
+								margin-bottom: 4px;
+							}
+						}
+					}
+				}
+			}
+
+			p, h2, h4 {
+				margin: 0;
+			}
+		}
+	}
+}
+@media only screen and (max-width: 1300px){
+	.slider {
+		&-main {
+			width: 90%;
+			margin: auto;
+		}
+
+		.rating-block {
+
+			gap: 30px;
+
+			.rating-main {
+
+				width: 43%;
+				padding: 16px;
+
+
+			}
+
+			.rating-info {
+				display: flex;
+				align-items: center;
+				margin-top: 20px;
+
+				.progress {
+					display: flex;
+					flex-direction: column;
+					gap: 10px;
+					margin-left: 10px;
+
+					div {
+						p {
+							font-size: 14px;
+							font-weight: 400;
+							color: #7E8794;
+							margin-bottom: 4px;
+						}
+					}
+				}
+			}
+		}
+
+	}
+
+}
+@media only screen and (max-width: 959px) {
+	.slider {
+		position: sticky;
+		margin-bottom: 50px;
+		&-main {
+			width: 100%;
+			margin: 0;
+			.rating-block {
+				display: flex;
+				flex-wrap: nowrap;
+				justify-content: flex-start;
+				gap: 20px;
+				overflow: scroll;
+				&::-webkit-scrollbar{
+					width: 0;
+				}
+				.rating-main {
+					background-color: #FDFDFD;
+					border-radius: 12px;
+					width: 590px;
+					padding: 20px;
+				}
+
+			}
+		}
+
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.slider {
+		margin-bottom: 20px;
+
+		&-main {
+			width: 95%;
+
+			.slider-ul {
+				gap: 12px;
+				padding: 0;
+
+				li {
+					width: auto;
+					padding: 0 15px;
+					height: 34px;
+					font-size: 14px;
+				}
+
+			}
+		}
+
+		.rating-block {
+			display: flex;
+			flex-wrap: nowrap;
+			overflow: scroll;
+			gap: 12px;
+
+			&::-webkit-scrollbar {
+				width: 0;
+			}
+
+			.rating-main {
+				width: 291px;
+				padding: 12px;
+
+				.rating-top {
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+
+					&-text {
+						line-height: 1.4;
+
+						p {
+							font-size: 12px;
+						}
+
+						h4 {
+							font-size: 12px;
+							width: 80%;
+						}
+					}
+
+					&-btns {
+						display: flex;
+						align-items: center;
+						gap: 12px;
+
+						button {
+							img {
+								width: 50%;
+							}
+						}
+					}
+				}
+
+				.rating-info {
+					.progress {
+
+						gap: 8px;
+
+						div {
+							p {
+								font-size: 12px;
+							}
+						}
+					}
+				}
+			}
+
+		}
+
+		.left-btn,
+		.right-btn {
+			display: none;
+		}
+	}
+}

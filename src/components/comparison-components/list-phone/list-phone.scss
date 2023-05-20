@@ -1,0 +1,340 @@
+.listPhone{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 20px auto 0;
+    .listPhone-top{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 16px;
+        padding: 20px ;
+        button{
+            height: 44px;
+            background-color: #FDFDFD;
+            padding: 0 10px;
+            border: 1px solid #F2F5F9;
+            color: #7E8794;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            font-size: 16px;
+            font-weight: 500;
+        }
+        .smart{
+            color: #FF4D4D;
+            span{
+                display: flex;
+                svg{
+                    color:#7E8794 ;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    .listPhone-block{
+        position: relative;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content:flex-start;
+        .add-mobile{
+            width: 100%;
+            border: none;
+            align-items: center;
+            button{
+                background-color: #FDFDFD;
+                color: #FF4D4D;
+            }
+        }
+        .btn-pagin{
+            position: absolute;
+            background-color: #F2F5F9;
+            color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .btn-right{
+            position: absolute;
+            right: 1%;
+        }
+        .btn-left{
+            position: absolute;
+            left: 1%;
+        }
+        .listPhone-main{
+            border:1px solid #F2F5F9;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 20px;
+            max-width: 319px;
+
+            .listPhone-img{
+                position: relative;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .img{
+                    width: 100%;
+
+                }
+                .delete-btn{
+                    position: absolute;
+                    top: 2%;
+                    right: 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: #FDFDFD;
+                    span{
+                        height: 18px;
+
+                    }
+
+                }
+            }
+            .listPhone-text{
+                display: flex;
+                flex-direction: column;
+                p{
+                    color: #7E8794;
+                    font-size: 14px;
+                    font-weight: 400;
+                }
+                h1{
+                    font-size: 20px;
+                    font-weight: 600;
+                    margin: 4px 0 12px;
+                }
+                .bottom-info{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    h4{
+                        font-size: 20px;
+                        font-weight: 700;
+                        margin: 4px 0 0 0;
+                    }
+                    button{
+                        background-color: #FDFDFD;
+                        img{
+                            width: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .add-comparison{
+        display: none;
+    }
+}
+@media only screen and (max-width: 1150px){
+    .listPhone{
+        .listPhone-block{
+            .listPhone-main{
+                .listPhone-img{
+
+                    .img-main{
+                        width: 100%;
+                    }
+                }
+                .listPhone-text{
+                    p{
+                        font-size: 12px;
+                    }
+                    h1{
+                        font-size: 16px;
+                    }
+                    .bottom-info{
+                        h4{
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+        .add-comparison{
+            display: none;
+        }
+    }
+}
+@media only screen and (max-width: 959px){
+    .listPhone{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 30px;
+        border: 1px solid #F2F5F9;
+        border-radius: 12px;
+
+        .listPhone-block{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .listPhone-main{
+
+
+                .listPhone-text{
+                    display: flex;
+                    flex-direction: column;
+                    p{
+                        color: #7E8794;
+                        font-size: 14px;
+                        font-weight: 400;
+                    }
+                    h1{
+                        font-size: 20px;
+                        font-weight: 600;
+                        margin: 4px 0 12px;
+                    }
+                    .bottom-info{
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        h4{
+                            font-size: 20px;
+                            font-weight: 700;
+                            margin: 4px 0 0 0;
+                        }
+                        button{
+                            background-color: #FDFDFD;
+                            img{
+                                width: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .add-comparison{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            button{
+               color: #FF4D4D;
+                width: 100%;
+                padding: 15px;
+            }
+            div{
+                display: flex;
+                margin: 30px auto 0;
+                gap: 20px;
+                button{
+                    border-radius: 12px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: 172px;
+                    font-size: 12px;
+                    color: #7E8794;
+                    span{
+                        width: 40px;
+                        height: 40px;
+                        background-color: #FDFDFD;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 50%;
+                        border: 1px solid #F2F5F9;
+                    }
+                    .css-8je8zh-MuiTouchRipple-root{
+                        display: none !important;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 500px){
+    .listPhone{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 20px;
+        border: 1px solid #F2F5F9;
+        border-radius: 12px;
+        .listPhone-top{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 16px;
+            padding: 20px ;
+            button{
+                height: 44px;
+                background-color: #FDFDFD;
+                padding: 0 10px;
+                border: 1px solid #F2F5F9;
+                color: #7E8794;
+                border-radius: 8px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 5px;
+                font-size: 16px;
+                font-weight: 500;
+            }
+            .smart{
+                color: #FF4D4D;
+                span{
+                    display: flex;
+                    svg{
+                        color:#7E8794 ;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+        .listPhone-block{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .listPhone-main{
+                border:1px solid #F2F5F9;
+                padding: 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 20px;
+                width: 100%;
+                .listPhone-img{
+                    position: relative;
+                    width: 100%;
+                    .delete-btn{
+                       display: none;
+
+                    }
+                }
+                .listPhone-text{
+                    p{
+                        font-size: 12px;
+                    }
+                    h1{
+                        font-size: 14px;
+                    }
+                    .bottom-info{
+                        div{
+                            .price-bottom{
+                                font-size: 16px ;
+                                display: block;
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+
+    }
+}

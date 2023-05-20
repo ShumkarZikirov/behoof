@@ -1,0 +1,21 @@
+.main-page{
+
+    .app-gray {
+        margin: 70px 0 40px 0;
+        transform: skewY(2deg);
+        transform-origin: top;
+        width: 100%;
+        background: rgb(242, 245, 249);
+
+        .gray-choice {
+            transform: skewY(-2deg);
+            padding: 20px 0;
+            width: 95%;
+            margin: auto;
+        }
+    }
+    &-block{
+        width: 95%;
+        margin: auto;
+    }
+}

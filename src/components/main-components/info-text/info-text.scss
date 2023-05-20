@@ -1,0 +1,327 @@
+.info-text {
+	max-width: 1440px;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+
+	h1 {
+		font-size: 24px;
+		margin: 0;
+		font-weight: 600;
+	}
+
+	&-block {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		overflow: scroll;
+		gap: 30px;
+		&::-webkit-scrollbar{
+			width: 0;
+		}
+		div {
+			display: flex;
+			flex-direction: column;
+			gap: 10px;
+
+			h2 {
+				font-size: 48px;
+				font-weight: 800;
+				color: #FF4D4D;
+				margin: 0;
+			}
+
+			p {
+				font-size: 16px;
+				font-weight: 500;
+				margin: 0;
+			}
+		}
+	}
+
+	.banners {
+		position: relative;
+		margin-top: 20px;
+		width: 100%;
+		.img-banner{
+			width: 100%;
+			height: 453px;
+		}
+		.block {
+			position: absolute;
+			display: flex;
+			justify-content: center;
+			padding: 80px;
+			.info{
+				display: flex;
+				flex-direction: column;
+				gap: 50px;
+				h1{
+					font-size: 48px;
+					font-weight: 800;
+					span{
+						color: #FF4D4D;
+					}
+				}
+				div{
+					display: flex;
+					gap: 30px;
+				}
+			}
+			.tell{
+				bottom: 0;
+				width: 70%;
+				height: 370px;
+			}
+		}
+	}
+}
+@media only screen and (max-width: 1300px){
+	.info-text {
+		.banners {
+
+
+			.block {
+
+				.info{
+
+					h1{
+						font-size: 40px;
+
+					}
+
+				}
+				.tell{
+					width: 45%;
+				}
+			}
+		}
+	}
+}
+@media only screen and (max-width: 959px){
+	.info-text {
+		h1 {
+			font-size: 18px;
+		}
+
+		&-block {
+			gap: 20px;
+			div {
+				gap: 10px;
+				h2 {
+					font-size: 35px;
+				}
+
+				p {
+					font-size: 13px;
+				}
+			}
+		}
+
+		.banners {
+			.img-banner{
+				width: 100%;
+				height: 380px;
+			}
+			.block {
+				position: absolute;
+				display: flex;
+				justify-content: center;
+				padding: 60px  40px 0;
+				.info{
+					display: flex;
+					flex-direction: column;
+					gap: 50px;
+					h1{
+						font-size: 30px;
+					}
+					div{
+						display: flex;
+						gap: 20px;
+						img{
+							width: 150px;
+						}
+					}
+				}
+				.tell{
+
+					bottom: 0;
+					width: 45%;
+					height: 320px;
+				}
+			}
+		}
+	}
+}
+@media only screen and (max-width: 800px){
+	.info-text {
+		h1 {
+			font-size: 18px;
+		}
+
+		&-block {
+			gap: 20px;
+			div {
+				gap: 10px;
+				h2 {
+					font-size: 35px;
+				}
+
+				p {
+					font-size: 13px;
+				}
+			}
+		}
+
+		.banners {
+			.img-banner{
+				width: 100%;
+				height: 320px;
+			}
+			.block {
+				position: absolute;
+				display: flex;
+				justify-content: center;
+				padding: 60px  20px 0 ;
+				.info{
+					display: flex;
+					flex-direction: column;
+					gap: 50px;
+					h1{
+						font-size: 27px;
+					}
+					div{
+						display: flex;
+						gap: 20px;
+						img{
+							width: 120px;
+						}
+					}
+				}
+				.tell{
+
+					bottom: 0;
+					width: 40%;
+					height: 260px;
+				}
+			}
+		}
+	}
+}
+@media only screen and (max-width: 500px) {
+	.info-text {
+		width: 95%;
+		gap: 16px;
+
+		h1 {
+			font-size: 16px;
+		}
+
+		&-block {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			gap: 12px;
+
+			div {
+				display: flex;
+				flex-direction: column;
+				gap: 7px;
+
+				h2 {
+					font-size: 32px;
+				}
+
+				p {
+					font-size: 12px;
+
+				}
+			}
+		}
+		.banners {
+			.img-banner{
+				width: 100%;
+				height: 400px;
+			}
+			.block {
+				position: absolute;
+				flex-direction: column;
+				justify-content: space-between;
+				height: 360px;
+				padding: 20px;
+				.info{
+					display: flex;
+					flex-direction: column;
+					gap: 10px;
+					h1{
+						font-size: 20px;
+						width: 80%;
+					}
+					div{
+						display: flex;
+						justify-content: space-between;
+						gap: 5px;
+						img{
+							width: 40%;
+							height: 43px;
+						}
+					}
+				}
+				.tell{
+					position: absolute;
+					bottom: 0;
+					left: 10%;
+					width:75%;
+					height: auto;
+					margin: auto;
+					object-fit: cover;
+				}
+			}
+		}
+	}
+}
+@media only screen and (max-width: 430px) {
+	.info-text {
+		.banners {
+			.img-banner{
+				width: 100%;
+				height: 400px;
+			}
+			.block {
+				position: absolute;
+				flex-direction: column;
+				justify-content: space-between;
+				height: 360px;
+				padding: 20px;
+				.info{
+					display: flex;
+					flex-direction: column;
+					gap: 10px;
+					h1{
+						font-size: 20px;
+						width: 80%;
+					}
+					div{
+						display: flex;
+						justify-content: space-between;
+						gap: 5px;
+						img{
+							width: 40%;
+							height: 43px;
+						}
+					}
+				}
+				.tell{
+					position: absolute;
+					bottom: 0;
+					left: 10%;
+					width:85%;
+					height: auto;
+					margin: auto;
+					object-fit: cover;
+				}
+			}
+		}
+	}
+}

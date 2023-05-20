@@ -1,0 +1,343 @@
+.banner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 40px auto 0;
+	max-width: 1440px;
+	height: auto;
+	gap: 20px;
+
+	&-left {
+		position: relative;
+		width: 50vw;
+		div {
+			position: absolute;
+			padding: 50px 40px;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 32px;
+
+			p {
+				font-size: 40px;
+				font-weight: 800;
+				margin: 0;
+
+				span {
+					color: #FF4D4D;
+				}
+			}
+
+			button {
+				background-color: #FF4D4D;
+				padding: 14px 25px;
+				font-size: 13px;
+				border-radius: 8px;
+
+				span {
+					display: flex;
+					font-size: 13px;
+				}
+			}
+		}
+
+		img {
+			max-width: 100%;
+			height: 308px;
+		}
+	}
+
+	&-right {
+		position: relative;
+		width: 40vw;
+		div {
+			position: absolute;
+			padding: 25px 40px;
+			display: flex;
+			flex-direction: column;
+			gap: 50px;
+			p {
+				font-size: 40px;
+				font-weight: 800;
+
+				span {
+					color: #FF4D4D;
+
+				}
+			}
+
+			button {
+				background-color: #FF4D4D;
+				padding: 14px 25px;
+				font-size: 13px;
+				border-radius: 8px;
+				width: 40%;
+
+				span {
+					display: flex;
+					font-size: 13px;
+				}
+			}
+		}
+
+		img {
+			width: 100%;
+			height: 308px;
+		}
+	}
+}
+@media only screen and (max-width: 1300px) {
+	.banner {
+		flex-wrap: nowrap;
+		width: 100%;
+		margin: 40px auto 0;
+		gap: 20px;
+		&-left {
+			width: 50vw;
+			div {
+				padding: 50px 40px;
+				gap: 32px;
+				p {
+					font-size: 30px;
+
+				}
+
+				button {
+					padding: 14px 25px;
+				}
+			}
+
+			img {
+				max-width: 100%;
+				height: 308px;
+			}
+		}
+
+		&-right {
+			width: 40vw;
+			div {
+				padding: 25px 40px;
+				p {
+					font-size: 30px;
+				}
+
+				button {
+					padding: 14px 25px;
+				}
+			}
+
+			img {
+				width: 100%;
+				height: 308px;
+			}
+		}
+	}
+}
+@media only screen and (max-width: 959px) {
+	.banner {
+		width: 100%;
+
+		&-left {
+			div {
+				padding: 30px 20px;
+				gap: 25px;
+				p {
+					font-size: 30px;
+				}
+			}
+
+			img {
+				max-width: 100%;
+				height: 280px;
+			}
+		}
+
+		&-right {
+			div {
+				padding: 15px 20px;
+				p {
+					font-size: 30px;
+				}
+
+				button {
+					padding: 14px 25px;
+				}
+			}
+
+			img {
+				width: 100%;
+				height: 280px;
+			}
+		}
+	}
+}
+@media only screen and (max-width: 850px) {
+	.banner {
+		width: 100%;
+		flex-direction: column;
+		&-left {
+			width: 100%;
+			div {
+				padding: 30px 20px;
+				gap: 25px;
+				p {
+					font-size: 35px;
+				}
+			}
+
+			img {
+				max-width: 100%;
+				height: 280px;
+			}
+		}
+
+		&-right {
+			width: 100%;
+			div {
+				padding: 15px 20px;
+				p {
+					font-size: 35px;
+				}
+
+				button {
+					padding: 14px 25px;
+				}
+			}
+
+			img {
+				width: 100%;
+				height: 280px;
+				object-fit: cover;
+				border-radius: 8px;
+			}
+		}
+	}
+}
+@media only screen and (max-width: 500px) {
+	.banner {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		margin-top: 28px;
+		gap: 10px;
+
+		&-left {
+			div {
+				padding: 10px 20px;
+				gap: 10px;
+
+				p {
+					font-size: 20px;
+					width: 70%;
+				}
+
+				button {
+					padding: 14px 20px;
+					font-size: 13px;
+
+					span {
+						display: flex;
+						font-size: 13px;
+					}
+				}
+			}
+
+			img {
+				height: 172px;
+			}
+
+		}
+
+		&-right {
+			position: relative;
+			width: 100%;
+
+			div {
+				position: absolute;
+				padding: 10px 20px;
+				gap: 20px;
+				p {
+					font-size: 20px;
+					width: 80%;
+				}
+
+				button {
+					padding: 14px 25px;
+					font-size: 13px;
+
+					span {
+						font-size: 13px;
+					}
+				}
+			}
+
+			img {
+				height: 164px;
+				object-fit: cover;
+				object-position: bottom;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 390px) {
+	.banner {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		margin-top: 28px;
+		gap: 10px;
+
+		&-left {
+			div {
+				padding: 10px 20px;
+				gap: 10px;
+
+				p {
+					font-size: 20px;
+					width: 90%;
+				}
+
+				button {
+					padding: 14px 20px;
+					font-size: 13px;
+
+					span {
+						display: flex;
+						font-size: 13px;
+					}
+				}
+			}
+
+			img {
+				height: 172px;
+			}
+
+		}
+
+		&-right {
+			position: relative;
+			width: 100%;
+
+			div {
+				position: absolute;
+				padding: 10px 20px;
+
+				p {
+					font-size: 20px;
+					width: 80%;
+				}
+
+				button {
+					padding: 12px 15px;
+					font-size: 13px;
+
+					span {
+						font-size: 13px;
+					}
+				}
+			}
+
+		}
+	}
+}

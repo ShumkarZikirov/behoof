@@ -1,0 +1,85 @@
+.tables{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 540px;
+    overflow: scroll;
+    &::-webkit-scrollbar{
+        width: 0;}
+    h1{
+        font-size: 24px;
+        font-weight: 600;
+        margin: 20px 0 20px 20px ;
+    }
+    div{
+        display: flex;
+        flex-direction: column;
+        h3{
+            font-size: 20px;
+            font-weight: 600;
+            background-color: #F6F7FA;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            padding-left: 20px;
+        }
+        div{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+
+            .table{
+                flex: 1;
+                max-width: 359px;
+                height: 48px;
+                padding-left: 20px;
+                p{
+                    font-size: 16px;
+                    font-weight: 500;
+                    color: #7E8794;
+                }
+                .span-people{
+                    color: #7E8794;
+                    margin-left: 10px;
+                    font-size: 16px;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+    .css-ryrseu-MuiRating-root{
+        color: #FF4D4D ;
+    }
+}
+@media only screen and (max-width: 500px){
+    .tables{
+        h1{
+            font-size: 16px;
+        }
+        div{
+            h3{
+                font-size: 16px;
+
+            }
+            div{
+
+                .table{
+
+                    p{
+                        font-size: 14px;
+
+                    }
+                    .span-people{
+
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+        .css-ryrseu-MuiRating-root{
+            width: 20px;
+            overflow: hidden;
+        }
+    }
+}
