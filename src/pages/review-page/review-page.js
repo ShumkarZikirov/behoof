@@ -24,7 +24,7 @@ const ReviewPage = () => {
     return (
         <div className={'review'}>
             <div className={'review-main'}>
-                <h4><Link to={'/'}>Главная</Link>/Обзоры</h4>
+                <h4><Link to={'/'}>Главная</Link>/ Обзоры</h4>
                 <div className={'review-search'}>
                     <h1>Обзоры, чтобы выбрать нужное</h1>
                     <form>

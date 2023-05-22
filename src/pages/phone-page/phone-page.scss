@@ -1,10 +1,13 @@
 .phone-page{
     max-width:1516px;
-    margin: 30px  auto 50px;
+    margin: 16px  auto 50px;
     h4{
         font-size: 16px;
         font-weight: 400;
         margin-bottom: 32px;
+        display: flex;
+        align-items: center;
+        gap: 5px;
         a{
             color: #A1ABB9;
             text-decoration: none;
@@ -60,6 +63,45 @@
             }
             p{
                display: none;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 959px){
+    .phone-page{
+        max-width: 100%;
+        h4{
+            display: none;
+        }
+        .phone-page-main{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            h1{
+                font-size: 20px;
+            }
+            p{
+                display: none;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 959px){
+    .phone-page{
+        max-width: 100%;
+        h4{
+            display: none;
+        }
+        .phone-page-main{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            h1{
+                font-size: 20px;
+                margin-left: 10px;
+            }
+            p{
+                display: none;
             }
         }
     }

@@ -21,7 +21,20 @@ export const productInfo = [
         ios: true,
         price: '78 999 ₽',
         procent: '13%',
-
+        colors:{
+            white:'#F2F5F9',
+            yellow:'#FFE0BB',
+            red:'#FFBBBB',
+            black:'#6C6C6C',
+            green:'#BBFFE2',
+            blue:'#BBC2FF',
+            orange:'#FEBBFF'
+        },
+        memores:{
+            ram1:'128 ГБ',
+            ram2:'256 ГБ',
+            ram3:'512 ГБ'
+        },
         info: {
             desing: 4,
             batar: 2,
@@ -30,14 +43,6 @@ export const productInfo = [
             otvet: 5,
             port: 4
         },
-        description: 'Смартфон Apple iPhone 13 выполнен в компактном корпусе с привлекательной розовой расцветкой и защищенной ' +
-            'конструкцией по стандарту IP68. Мощный чип A15 Bionic обеспечивает быструю и стабильную работу при запуске приложений,' +
-            ' просмотре видео, веб-серфинге и выполнении других задач. На дисплее 6.1 дюйма OLED выводится четкая и красочная картинка.\n' +
-            'На тыловой стороне расположена камера с двумя датчиками по 12 Мп, которые при поддержке ряда технологий и функций позволяют ' +
-            'создавать реалистичные снимки в различных условиях. На передней стороне имеется камера 12 Мп для селфи и общения. В мобильном ' +
-            'устройстве предлагается широкий набор беспроводных интерфейсов и разъем Lightning 8-pin. Аккумулятор гарантирует' +
-            ' продолжительное время автономности. Из особенностей отмечаются поддержка быстрой зарядки, беспроводной зарядки и устройств' +
-            ' MagSafe с магнитным позиционированием.',
         camera:'48 MPx',
         sistem:'iOS',
         diog:'6,1”',
@@ -52,14 +57,16 @@ export const productInfo = [
         constEkran:'безрамочный, вырез на экране',
 
     },
-
     {
         id: 2,
-        img: img,
+        img1: img,
+        img2: img,
+        img3: img,
+        imgMax:img1,
         osenka: 4.4,
         rating: 4.0,
-        otziv: 447,
-        title: 'Apple iPhone 13 Pro Max 256 ГБ серый',
+        otziv: 127,
+        title: 'Apple iPhone 13 Pro Max 128 ГБ красный',
         sim: true,
         display: true,
         bionic: true,
@@ -68,20 +75,50 @@ export const productInfo = [
         memory: false,
         mah: true,
         ios: true,
-        price: '78 999 ₽',
+        price: '75 999 ₽',
         procent: '13%',
+        colors:{
+            white:'#F2F5F9',
+            yellow:'#FFE0BB',
+            red:'#FFBBBB',
+            black:'#6C6C6C',
+            green:'#BBFFE2',
+            blue:'#BBC2FF',
+            orange:'#FEBBFF'
+        },
+        memores:{
+            ram1:'128 ГБ',
+            ram2:'256 ГБ',
+            ram3:'512 ГБ'
+        },
         info: {
-            desing: 4,
-            batar: 2,
-            display: 4,
-            camera: 5,
-            otvet: 5,
+            desing: 2,
+            batar: 4,
+            display: 5,
+            camera: 2,
+            otvet: 3,
             port: 4
-        }
+        },
+        camera:'128 MPx',
+        sistem:'iOS',
+        diog:'6,4”',
+        charge:'Беспроводная',
+        tip:'смартфон',
+        model:'Apple iPhone 12',
+        year:2021,
+        razcamer:'50 мг',
+        pixel:'457 ppi',
+        ekran:'OLED',
+        colorSum:'16.7 млн',
+        constEkran:'безрамочный, вырез на экране',
+
     },
     {
         id: 3,
-        img: img,
+        img1: img,
+        img2: img,
+        img3: img,
+        imgMax:img1,
         osenka: 4.4,
         rating: 4.0,
         otziv: 447,
@@ -96,6 +133,20 @@ export const productInfo = [
         ios: true,
         price: '78 999 ₽',
         procent: '13%',
+        colors:{
+            white:'#F2F5F9',
+            yellow:'#FFE0BB',
+            red:'#FFBBBB',
+            black:'#6C6C6C',
+            green:'#BBFFE2',
+            blue:'#BBC2FF',
+            orange:'#FEBBFF'
+        },
+        memores:{
+            ram1:'128 ГБ',
+            ram2:'256 ГБ',
+            ram3:'512 ГБ'
+        },
         info: {
             desing: 4,
             batar: 2,
@@ -103,11 +154,27 @@ export const productInfo = [
             camera: 5,
             otvet: 5,
             port: 4
-        }
+        },
+        camera:'48 MPx',
+        sistem:'iOS',
+        diog:'6,1”',
+        charge:'Беспроводная',
+        tip:'смартфон',
+        model:'Apple iPhone 13',
+        year:2021,
+        razcamer:'50 мг',
+        pixel:'457 ppi',
+        ekran:'OLED',
+        colorSum:'16.7 млн',
+        constEkran:'безрамочный, вырез на экране',
+
     },
     {
         id: 4,
-        img: img,
+        img1: img,
+        img2: img,
+        img3: img,
+        imgMax:img1,
         osenka: 4.4,
         rating: 4.0,
         otziv: 447,
@@ -122,6 +189,20 @@ export const productInfo = [
         ios: true,
         price: '78 999 ₽',
         procent: '13%',
+        colors:{
+            white:'#F2F5F9',
+            yellow:'#FFE0BB',
+            red:'#FFBBBB',
+            black:'#6C6C6C',
+            green:'#BBFFE2',
+            blue:'#BBC2FF',
+            orange:'#FEBBFF'
+        },
+        memores:{
+            ram1:'128 ГБ',
+            ram2:'256 ГБ',
+            ram3:'512 ГБ'
+        },
         info: {
             desing: 4,
             batar: 2,
@@ -129,11 +210,83 @@ export const productInfo = [
             camera: 5,
             otvet: 5,
             port: 4
-        }
+        },
+        camera:'48 MPx',
+        sistem:'iOS',
+        diog:'6,1”',
+        charge:'Беспроводная',
+        tip:'смартфон',
+        model:'Apple iPhone 13',
+        year:2021,
+        razcamer:'50 мг',
+        pixel:'457 ppi',
+        ekran:'OLED',
+        colorSum:'16.7 млн',
+        constEkran:'безрамочный, вырез на экране',
+
+    },
+    {
+        id: 5,
+        img1: img,
+        img2: img,
+        img3: img,
+        imgMax:img1,
+        osenka: 4.4,
+        rating: 4.0,
+        otziv: 447,
+        title: 'Apple iPhone 13 Pro Max 256 ГБ серый',
+        sim: true,
+        display: true,
+        bionic: true,
+        mpcam: true,
+        ram: true,
+        memory: false,
+        mah: true,
+        ios: true,
+        price: '78 999 ₽',
+        procent: '13%',
+        colors:{
+            white:'#F2F5F9',
+            yellow:'#FFE0BB',
+            red:'#FFBBBB',
+            black:'#6C6C6C',
+            green:'#BBFFE2',
+            blue:'#BBC2FF',
+            orange:'#FEBBFF'
+        },
+        memores:{
+            ram1:'128 ГБ',
+            ram2:'256 ГБ',
+            ram3:'512 ГБ'
+        },
+        info: {
+            desing: 4,
+            batar: 2,
+            display: 4,
+            camera: 5,
+            otvet: 5,
+            port: 4
+        },
+        camera:'48 MPx',
+        sistem:'iOS',
+        diog:'6,1”',
+        charge:'Беспроводная',
+        tip:'смартфон',
+        model:'Apple iPhone 13',
+        year:2021,
+        razcamer:'50 мг',
+        pixel:'457 ppi',
+        ekran:'OLED',
+        colorSum:'16.7 млн',
+        constEkran:'безрамочный, вырез на экране',
+
     },
     {
         id: 6,
-        img: img,
+        img1: img,
+        img2: img,
+        img3: img,
+        imgMax:img1,
         osenka: 4.4,
         rating: 4.0,
         otziv: 447,
@@ -148,6 +301,20 @@ export const productInfo = [
         ios: true,
         price: '78 999 ₽',
         procent: '13%',
+        colors:{
+            white:'#F2F5F9',
+            yellow:'#FFE0BB',
+            red:'#FFBBBB',
+            black:'#6C6C6C',
+            green:'#BBFFE2',
+            blue:'#BBC2FF',
+            orange:'#FEBBFF'
+        },
+        memores:{
+            ram1:'128 ГБ',
+            ram2:'256 ГБ',
+            ram3:'512 ГБ'
+        },
         info: {
             desing: 4,
             batar: 2,
@@ -155,11 +322,27 @@ export const productInfo = [
             camera: 5,
             otvet: 5,
             port: 4
-        }
+        },
+        camera:'48 MPx',
+        sistem:'iOS',
+        diog:'6,1”',
+        charge:'Беспроводная',
+        tip:'смартфон',
+        model:'Apple iPhone 13',
+        year:2021,
+        razcamer:'50 мг',
+        pixel:'457 ppi',
+        ekran:'OLED',
+        colorSum:'16.7 млн',
+        constEkran:'безрамочный, вырез на экране',
+
     },
     {
         id: 7,
-        img: img,
+        img1: img,
+        img2: img,
+        img3: img,
+        imgMax:img1,
         osenka: 4.4,
         rating: 4.0,
         otziv: 447,
@@ -174,6 +357,20 @@ export const productInfo = [
         ios: true,
         price: '78 999 ₽',
         procent: '13%',
+        colors:{
+            white:'#F2F5F9',
+            yellow:'#FFE0BB',
+            red:'#FFBBBB',
+            black:'#6C6C6C',
+            green:'#BBFFE2',
+            blue:'#BBC2FF',
+            orange:'#FEBBFF'
+        },
+        memores:{
+            ram1:'128 ГБ',
+            ram2:'256 ГБ',
+            ram3:'512 ГБ'
+        },
         info: {
             desing: 4,
             batar: 2,
@@ -181,11 +378,27 @@ export const productInfo = [
             camera: 5,
             otvet: 5,
             port: 4
-        }
+        },
+        camera:'48 MPx',
+        sistem:'iOS',
+        diog:'6,1”',
+        charge:'Беспроводная',
+        tip:'смартфон',
+        model:'Apple iPhone 13',
+        year:2021,
+        razcamer:'50 мг',
+        pixel:'457 ppi',
+        ekran:'OLED',
+        colorSum:'16.7 млн',
+        constEkran:'безрамочный, вырез на экране',
+
     },
     {
         id: 8,
-        img: img,
+        img1: img,
+        img2: img,
+        img3: img,
+        imgMax:img1,
         osenka: 4.4,
         rating: 4.0,
         otziv: 447,
@@ -200,6 +413,20 @@ export const productInfo = [
         ios: true,
         price: '78 999 ₽',
         procent: '13%',
+        colors:{
+            white:'#F2F5F9',
+            yellow:'#FFE0BB',
+            red:'#FFBBBB',
+            black:'#6C6C6C',
+            green:'#BBFFE2',
+            blue:'#BBC2FF',
+            orange:'#FEBBFF'
+        },
+        memores:{
+            ram1:'128 ГБ',
+            ram2:'256 ГБ',
+            ram3:'512 ГБ'
+        },
         info: {
             desing: 4,
             batar: 2,
@@ -207,11 +434,27 @@ export const productInfo = [
             camera: 5,
             otvet: 5,
             port: 4
-        }
+        },
+        camera:'48 MPx',
+        sistem:'iOS',
+        diog:'6,1”',
+        charge:'Беспроводная',
+        tip:'смартфон',
+        model:'Apple iPhone 13',
+        year:2021,
+        razcamer:'50 мг',
+        pixel:'457 ppi',
+        ekran:'OLED',
+        colorSum:'16.7 млн',
+        constEkran:'безрамочный, вырез на экране',
+
     },
     {
         id: 9,
-        img: img,
+        img1: img,
+        img2: img,
+        img3: img,
+        imgMax:img1,
         osenka: 4.4,
         rating: 4.0,
         otziv: 447,
@@ -226,6 +469,20 @@ export const productInfo = [
         ios: true,
         price: '78 999 ₽',
         procent: '13%',
+        colors:{
+            white:'#F2F5F9',
+            yellow:'#FFE0BB',
+            red:'#FFBBBB',
+            black:'#6C6C6C',
+            green:'#BBFFE2',
+            blue:'#BBC2FF',
+            orange:'#FEBBFF'
+        },
+        memores:{
+            ram1:'128 ГБ',
+            ram2:'256 ГБ',
+            ram3:'512 ГБ'
+        },
         info: {
             desing: 4,
             batar: 2,
@@ -233,58 +490,19 @@ export const productInfo = [
             camera: 5,
             otvet: 5,
             port: 4
-        }
-    },
-    {
-        id: 10,
-        img: img,
-        osenka: 4.4,
-        rating: 4.0,
-        otziv: 447,
-        title: 'Apple iPhone 13 Pro Max 256 ГБ серый',
-        sim: true,
-        display: true,
-        bionic: true,
-        mpcam: true,
-        ram: true,
-        memory: false,
-        mah: true,
-        ios: true,
-        price: '78 999 ₽',
-        procent: '13%',
-        info: {
-            desing: 4,
-            batar: 2,
-            display: 4,
-            camera: 5,
-            otvet: 5,
-            port: 4
-        }
-    },
-    {
-        id: 1,
-        img: img,
-        osenka: 4.4,
-        rating: 4.0,
-        otziv: 447,
-        title: 'Apple iPhone 13 Pro Max 256 ГБ серый',
-        sim: true,
-        display: true,
-        bionic: true,
-        mpcam: true,
-        ram: true,
-        memory: false,
-        mah: true,
-        ios: true,
-        price: '78 999 ₽',
-        procent: '13%',
-        info: {
-            desing: 4,
-            batar: 2,
-            display: 4,
-            camera: 5,
-            otvet: 5,
-            port: 4
-        }
+        },
+        camera:'48 MPx',
+        sistem:'iOS',
+        diog:'6,1”',
+        charge:'Беспроводная',
+        tip:'смартфон',
+        model:'Apple iPhone 13',
+        year:2021,
+        razcamer:'50 мг',
+        pixel:'457 ppi',
+        ekran:'OLED',
+        colorSum:'16.7 млн',
+        constEkran:'безрамочный, вырез на экране',
+
     },
 ]

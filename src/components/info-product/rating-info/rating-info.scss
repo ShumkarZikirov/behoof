@@ -1,30 +1,19 @@
-.rating{
+.info-ratings{
     display: flex;
     align-items: center;
     gap: 1px;
+    width: 100%;
     span{
-        width: 50px;
+        width: 100%;
         height: 4px;
         border-radius: 2px;
     }
 }
-@media only screen and (max-width: 1300px){
-    .rating{
-        span{
-            width: 45px;
-            height: 3px;
-        }
-    }
-}
 @media only screen and (max-width: 500px){
-    .rating{
-        display: flex;
-        align-items: center;
-        gap: 1px;
+    .info-ratings{
         span{
-            width: 30px;
-            height: 2px;
-            border-radius: 2px;
+            height: 3px;
+
         }
     }
 }

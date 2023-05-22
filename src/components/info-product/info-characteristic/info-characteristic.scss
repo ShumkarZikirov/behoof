@@ -1,0 +1,135 @@
+.info-characteristic{
+    width: 100%;
+    margin-top: 32px;
+    &-main{
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #F2F5F9;
+        border-radius: 12px;
+        padding: 20px;
+        gap: 20px;
+        h1{
+            font-size: 20px;
+            font-weight: 600;
+        }
+        &-top{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            p{
+                font-size: 13px;
+                font-weight: 400;
+                color: #7E8794;
+                padding: 8px 12px;
+                background-color: #F6F7FA;
+                border-radius: 8px;
+                span{
+                    color: black;
+                    font-weight: 500;
+                }
+            }
+        }
+        button{
+            color: #FF4D4D;
+            border: none;
+            background-color: white;
+            font-size: 16px;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            span{
+                display: flex;
+            }
+        }
+        .active-main{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            width: 100%;
+            h2{
+                font-size: 20px;
+                font-weight: 600;
+                margin-bottom: 30px;
+            }
+            .active-block-btn{
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                border-bottom: 1px solid #d0d0d0;
+                padding: 8px 0;
+                &-text1{
+                    flex: 1.1;
+                    font-size: 16px;
+                    font-weight: 500;
+                    color: #7E8794;
+                }
+                &-text2{
+                    flex: 1;
+                    font-size: 16px;
+                    font-weight: 500;
+                }
+                .css-i4bv87-MuiSvgIcon-root{
+                    color: #A1ABB9;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 500px){
+    .info-characteristic{
+        width: 100%;
+        margin-top: 32px;
+        &-main{
+            display: flex;
+            flex-direction: column;
+            padding: 12px;
+            h1{
+                font-size: 16px;
+            }
+            &-top{
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                gap: 10px;
+                p{
+                    font-size: 12px;
+                }
+            }
+            button{
+                font-size: 14px;
+
+                span{
+                    display: flex;
+                }
+            }
+            .active-main{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                width: 100%;
+                h2{
+                    font-size: 16px;
+                    margin-bottom: 17px;
+                }
+                .active-block-btn{
+                    padding: 8px 0;
+                    &-text1{
+                        font-size: 14px;
+                    }
+                    &-text2{
+                        flex: 1;
+                        font-size: 14px;
+                        font-weight: 500;
+                    }
+
+                }
+            }
+        }
+    }
+    .css-13eg511-MuiButtonBase-root-MuiListItemButton-root:hover{
+        padding: 0;
+    }
+.css-13eg511-MuiButtonBase-root-MuiListItemButton-root{
+    padding: 0;
+}
+}

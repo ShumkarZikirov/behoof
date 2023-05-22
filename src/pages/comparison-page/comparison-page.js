@@ -63,7 +63,7 @@ function ComparisonPage() {
     return (
         <div className={'comparison'}>
             <div className={'comparison-main'}>
-                <h4><Link to={'/'}>Главная</Link>/Сравнение</h4>
+                <h4><Link to={'/'}>Главная</Link>/ Сравнение</h4>
                 <div>
                     <h1 className={'title'}>Сравнение товаров</h1>
                     <p className={'none'}><button> <span><DeleteIcon/></span>Удалить все списки</button></p>

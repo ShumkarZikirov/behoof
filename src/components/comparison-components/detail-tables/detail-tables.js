@@ -13,7 +13,7 @@ const DetailTables = ({visibleProducts}) => {
                     {visibleProducts.map((elem,index) => {
                         return(
                             <div key={index} className={'table'}>
-                                <Rating name="read-only"  value={elem.rating} readOnly />
+                                <Rating name="read-only" color={'#FF4D4D'} value={elem.rating} readOnly />
                                 <span className={'span-people'}>{elem.people}</span>
                             </div>
                         )})}

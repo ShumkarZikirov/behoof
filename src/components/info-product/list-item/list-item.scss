@@ -1,0 +1,180 @@
+.list-item{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+    p{
+        font-size: 14px;
+        font-weight: 500;
+        color: #7E8794;
+        line-height: 1.4;
+        span{
+            color: black;
+        }
+    }
+    &-main{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        .list-arrow{
+            position: absolute;
+            bottom: 23%;
+            left: 43.9%;
+            color: #F59626;
+        }
+        &-mg{
+            position: absolute;
+            width: 59px;
+            height: 38px;
+            background-color: #F59626;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            top: 0;
+            left: 41%;
+            color: white;
+        }
+        &-colors{
+            display: flex;
+            align-items: center;
+            gap: 3px;
+            width: 100%;
+            margin:45px 0 20px;
+            div{
+                height: 8px;
+                border-radius: 2px;
+            }
+            .color1{
+                background-color: #FF3B30;
+                width: 20%;
+            }
+            .color2{
+                position: relative;
+                background-color: #F59626;
+                width: 50%;
+                &-span{
+                    position: absolute;
+                    width: 8px;
+                    height: 8px;
+                    background-color: black;
+                    border-radius: 50%;
+                    bottom: 0;
+                    left: 50%;
+                }
+            }
+            .color3{
+                background-color: #30D170;
+                width: 30%;
+            }
+        }
+        &-num1{
+            color: black !important;
+            position: absolute;
+            bottom: 0;
+            left: 17%;
+        }
+        &-num2{
+            color: black !important;
+            position: absolute;
+            bottom: 0;
+            right: 27%;
+        }
+    }
+
+}
+@media only screen and (max-width: 500px){
+    .list-item{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 20px;
+        p{
+            font-size: 12px;
+            font-weight: 500;
+            color: #7E8794;
+            line-height: 1.4;
+            span{
+                color: black;
+            }
+        }
+        &-main{
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            .list-arrow{
+                position: absolute;
+                bottom: 23%;
+                left: 43%;
+                color: #F59626;
+            }
+            &-mg{
+                position: absolute;
+                width: 59px;
+                height: 38px;
+                background-color: #F59626;
+                border-radius: 4px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                top: 0;
+                left: 39%;
+                color: white;
+            }
+            &-colors{
+                display: flex;
+                align-items: center;
+                gap: 3px;
+                width: 100%;
+                margin:45px 0 20px;
+                div{
+                    height: 8px;
+                    border-radius: 2px;
+                }
+                .color1{
+                    background-color: #FF3B30;
+                    width: 20%;
+                }
+                .color2{
+                    position: relative;
+                    background-color: #F59626;
+                    width: 50%;
+                    &-span{
+                        position: absolute;
+                        width: 8px;
+                        height: 8px;
+                        background-color: black;
+                        border-radius: 50%;
+                        bottom: 0;
+                        left: 50%;
+                    }
+                }
+                .color3{
+                    background-color: #30D170;
+                    width: 30%;
+                }
+            }
+            &-num1{
+                color: black !important;
+                position: absolute;
+                bottom: 0;
+                left: 17%;
+            }
+            &-num2{
+                color: black !important;
+                position: absolute;
+                bottom: 0;
+                right: 27%;
+            }
+        }
+
+    }
+    .css-13eg511-MuiButtonBase-root-MuiListItemButton-root{
+        &:hover{
+            padding: 0 !important;
+        }
+    }
+}
+.css-13eg511-MuiButtonBase-root-MuiListItemButton-root{
+    padding: 0;
+}

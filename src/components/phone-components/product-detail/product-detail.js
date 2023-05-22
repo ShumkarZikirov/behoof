@@ -10,22 +10,27 @@ import CloseIcon from '@mui/icons-material/Close';
 import ProductRating from "../product-rating/product-rating";
 import Button from '@mui/material/Button';
 import './product-detail.scss'
-import Pagination from '@mui/material/Pagination';
 import Stack from '@mui/material/Stack';
+import Pagination from '../pagination/pagination'
+import {Link, useNavigate} from "react-router-dom";
 function ProductDetail() {
+    const navigate = useNavigate()
+    const navigateInfo = () => {
+        navigate('/info-product')
+    }
     return (
         <div className={'productDetail'}>
             <div className={'productDetail-main'}>
                     {
                         productInfo.map((elem,index) =>{
                             return(
-                                <div key={index} data-aos="fade-up-left" className={'productDetail-main-block'}>
-                                    <img className={'img-main'} src={elem.img} alt=""/>
+                                <div onClick={navigateInfo} key={index} data-aos="fade-up-left" className={'productDetail-main-block'}>
+                                    <img className={'img-main'} src={elem.img1} alt=""/>
                                     <div className={'detail-info'}>
                                         <div className={'detail-info-top'}>
                                               <div>
                                                   <p className={'detail-osenka'}>{elem.osenka} Оценка экспертов</p>
-                                                  <p className={'detail-rating'}><span>{elem.rating}.0</span> <Rating name="read-only" value={elem.rating} readOnly /> <span>{elem.otziv} Отзывов</span></p>
+                                                  <p className={'detail-rating'}><span>{elem.rating}.0</span> <Rating name="read-only" color={'#FF4D4D'}  value={elem.rating} readOnly /> <span>{elem.otziv} Отзывов</span></p>
                                               </div>
                                             <div className='buttons'>
                                                 <Fab size="small" color="inherit" aria-label="add">
@@ -42,7 +47,7 @@ function ProductDetail() {
                                                 <p><span><ArrowDropDownIcon /> {elem.procent}</span> <h2>{elem.price}</h2></p>
                                             </div>
                                             <div className={'detail-haracter'}>
-                                                <img className={'img-main2'} src={elem.img} alt=""/>
+                                                <img className={'img-main2'} src={elem.img1} alt=""/>
                                                 <div className={'none'}>
                                                     <p><span>{elem.sim? <CheckIcon/>:<CloseIcon style={{color:'red'}}/>}</span>Dual Sim, 3G, 4G, 5G, VoLTE, Wi-Fi, NFC</p>
                                                     <p><span>{elem.display? <CheckIcon/>:<CloseIcon style={{color:'red'}}/>}</span>6.1 inches, 1170 x 2532 px Display with Small Notch</p>
@@ -90,8 +95,7 @@ function ProductDetail() {
                         })
                     }
                 <Stack spacing={2} className={'paginations'}>
-                    <Pagination count={10} shape="rounded" />
-
+                    <Pagination/>
                 </Stack>
             </div>
         </div>

@@ -14,18 +14,17 @@
             border-radius: 12px;
             img{
                 object-fit: cover;
-
             }
             .img-main2{
                 display: none;
             }
             .detail-info{
                 flex: 2;
-
                 &-top{
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
+                    margin-bottom: 20px;
                     div{
                         display: flex;
                         align-items: center;
@@ -113,6 +112,7 @@
                 display: flex;
                 flex-direction: column;
                 gap: 10px;
+                width: 261px;
                 div{
                     p{
                         margin-bottom: 5px;
@@ -133,12 +133,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            margin: 30px 0;
-            .css-10w330c-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected{
-                background-color: #FF4D4D !important;
-                color: white;
-            }
-
+           margin: 0;
         }
     }
 }
@@ -297,7 +292,6 @@
                 border-radius: 12px;
                 .img-main{
                     display: none;
-
                 }
                 .detail-info{
                     flex: 2;
@@ -439,6 +433,129 @@
                                 height: 45px;
                                 padding: 0 15px;
                                 font-size: 12px;
+
+                            }
+                            .css-ryrseu-MuiRating-root{
+                                width: 20px !important;
+                                overflow: hidden;
+                            }
+
+                        }
+                        .buttons{
+                            position: absolute;
+                            top: 37%;
+                            button{
+                                background-color: #FDFDFD;
+                                img{
+                                    width: 50%;
+                                }
+                            }
+                        }
+                    }
+                    .detail-center{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 40px;
+                        margin-top: 15px;
+                        .detail-price{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: flex-start;
+                            align-items: flex-start;
+                            h1{
+                                font-size: 14px;
+                                font-weight: 600;
+                            }
+                            p{
+                                display: flex;
+                                flex-direction: row-reverse;
+                                align-items: center;
+                                gap: 10px;
+                                h2{
+                                    font-size: 14px;
+                                    font-weight: 700;
+                                }
+                                span{
+                                    display: flex;
+                                    align-items: center;
+                                    color: #30D170;
+                                }
+                            }
+                        }
+                        .detail-haracter{
+                            margin-top: 30px;
+                            display: flex;
+                            align-items: center;
+                            gap: 10px;
+                            .img-main2{
+                                display: block;
+                                object-position: left;
+                                width: 120px;
+                            }
+                            div{
+                                display: flex;
+                                flex-direction: column;
+                                gap: 10px;
+                                p{
+
+                                    gap: 10px;
+                                    font-size: 12px;
+                                    font-weight: 400;
+
+                                }
+                            }
+                            .none{
+                                display: none;
+                            }
+                        }
+                    }
+
+                }
+                .detail-right{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 500px){
+    .productDetail{
+        width: 95%;
+        margin: 20px auto 0;
+        &-main{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            &-block{
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                padding: 20px;
+                gap: 20px;
+                .img-main{
+                    display: none;
+
+                }
+                .detail-info{
+                    flex: 2;
+
+                    &-top{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        div{
+                            display: flex;
+                            align-items: center;
+                            gap: 10px;
+                            .detail-rating,.detail-osenka{
+                                display: flex;
+                                align-items: center;
+                                background-color: #F6F7FA;
+                                border-radius: 12px;
+                                height: 45px;
+                                padding: 0 15px;
+                                font-size: 10px;
 
                             }
                             .css-ryrseu-MuiRating-root{

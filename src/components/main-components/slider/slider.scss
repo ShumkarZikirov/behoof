@@ -23,7 +23,6 @@
 				display: flex;
 				align-items: center;
 				justify-content: space-between;
-
 				&-text {
 					line-height: 1.4;
 
@@ -58,12 +57,13 @@
 				display: flex;
 				align-items: center;
 				margin-top: 20px;
-
+				width: 100%;
 				.progress {
 					display: flex;
 					flex-direction: column;
 					gap: 10px;
 					margin-left: 10px;
+					width: 100%;
 
 					div {
 						p {
@@ -207,6 +207,7 @@
 			width: 100%;
 			margin: 0;
 			.rating-block {
+				width: 100%;
 				display: flex;
 				flex-wrap: nowrap;
 				justify-content: flex-start;
@@ -223,6 +224,27 @@
 				}
 
 			}
+			.rating-info {
+				display: flex;
+				align-items: center;
+				margin-top: 20px;
+				width: 100%;
+				.progress {
+					display: flex;
+					flex-direction: column;
+					gap: 10px;
+					margin-left: 10px;
+					width: 100%;
+					div {
+						p {
+							font-size: 14px;
+							font-weight: 400;
+							color: #7E8794;
+							margin-bottom: 4px;
+						}
+					}
+				}
+			}
 		}
 
 	}
@@ -231,10 +253,9 @@
 @media only screen and (max-width: 500px) {
 	.slider {
 		margin-bottom: 20px;
-
 		&-main {
-			width: 95%;
-
+			width: 90%;
+			margin: auto;
 			.slider-ul {
 				gap: 12px;
 				padding: 0;
@@ -254,13 +275,12 @@
 			flex-wrap: nowrap;
 			overflow: scroll;
 			gap: 12px;
-
 			&::-webkit-scrollbar {
 				width: 0;
 			}
 
 			.rating-main {
-				width: 291px;
+				width: 500px;
 				padding: 12px;
 
 				.rating-top {
@@ -296,12 +316,12 @@
 
 				.rating-info {
 					.progress {
-
+						width: 160px;
 						gap: 8px;
-
 						div {
 							p {
 								font-size: 12px;
+								width: 160px;
 							}
 						}
 					}

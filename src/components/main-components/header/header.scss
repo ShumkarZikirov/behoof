@@ -61,12 +61,12 @@
 				width: 100%;
 				img {
 					position: absolute;
-					left: 1%;
+					left: 2%;
 					top: 25%;
 				}
 
 				input {
-					padding: 10px 10px 10px 40px;
+					padding: 10px 10px 10px 45px;
 					height: 32px;
 					background-color: #F2F5F9;
 					width: 90%;
@@ -331,8 +331,9 @@ fieldset {
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
+		max-width: 95% !important;
 		margin: 12px auto 0;
-		max-width: 95%;
+
 		&-logo{
 			justify-content: flex-start;
 		}
@@ -365,7 +366,7 @@ fieldset {
 					img {
 						position: absolute;
 						left: 1%;
-						top: 32%;
+						top: 33%;
 					}
 					input {
 						width: 100%;
@@ -452,7 +453,7 @@ fieldset {
 		flex-direction: column;
 		align-items: flex-start;
 		margin: 12px auto 0;
-		width: 95%;
+		width: 90%;
 
 		&-logo {
 			img {
@@ -506,7 +507,7 @@ fieldset {
 					img {
 						position: absolute;
 						left: 4%;
-						top: 32%;
+						top: 28%;
 					}
 
 					input {

@@ -70,24 +70,60 @@ function PhoneFilter() {
                                 </div>
                                 <div className={'left-2'}>
                                     <h2>Батарея</h2>
-                                    <FormGroup sx={{borderRadius: '50%'}}>
-                                        <FormControlLabel control={<Checkbox/>} label="Text label"/>
-                                        <FormControlLabel control={<Checkbox/>} label="Text label"/>
-                                        <FormControlLabel control={<Checkbox/>} label="Text label"/>
-                                        <FormControlLabel control={<Checkbox/>} label="Text label"/>
-                                        <FormControlLabel control={<Checkbox/>} label="Text label"/>
-                                        <FormControlLabel control={<Checkbox/>} label="Text label"/>
+                                    <FormGroup className={'check-main'} sx={{borderRadius: '50%'}}>
+                                        <label className={'checkbox-filter'}>
+                                            <input type="checkbox" />
+                                            <span>Text label</span>
+                                        </label>
+                                        <label className={'checkbox-filter'}>
+                                            <input type="checkbox" />
+                                            <span>Text label</span>
+                                        </label>
+                                        <label className={'checkbox-filter'}>
+                                            <input type="checkbox" />
+                                            <span>Text label</span>
+                                        </label>
+                                        <label className={'checkbox-filter'}>
+                                            <input type="checkbox" />
+                                            <span>Text label</span>
+                                        </label>
+                                        <label className={'checkbox-filter'}>
+                                            <input type="checkbox" />
+                                            <span>Text label</span>
+                                        </label>
+                                        <label className={'checkbox-filter'}>
+                                            <input type="checkbox" />
+                                            <span>Text label</span>
+                                        </label>
                                     </FormGroup>
                                 </div>
                                 <div className={'left-2'}>
                                     <h2>Камера</h2>
-                                    <FormGroup>
-                                        <FormControlLabel control={<Checkbox/>} label="Text label"/>
-                                        <FormControlLabel control={<Checkbox/>} label="Text label"/>
-                                        <FormControlLabel control={<Checkbox/>} label="Text label"/>
-                                        <FormControlLabel control={<Checkbox/>} label="Text label"/>
-                                        <FormControlLabel control={<Checkbox/>} label="Text label"/>
-                                        <FormControlLabel control={<Checkbox/>} label="Text label"/>
+                                    <FormGroup className={'check-main'}>
+                                        <label className={'checkbox-filter'}>
+                                            <input type="checkbox" />
+                                            <span>Text label</span>
+                                        </label>
+                                        <label className={'checkbox-filter'}>
+                                            <input type="checkbox" />
+                                            <span>Text label</span>
+                                        </label>
+                                        <label className={'checkbox-filter'}>
+                                            <input type="checkbox" />
+                                            <span>Text label</span>
+                                        </label>
+                                        <label className={'checkbox-filter'}>
+                                            <input type="checkbox" />
+                                            <span>Text label</span>
+                                        </label>
+                                        <label className={'checkbox-filter'}>
+                                            <input type="checkbox" />
+                                            <span>Text label</span>
+                                        </label>
+                                        <label className={'checkbox-filter'}>
+                                            <input type="checkbox" />
+                                            <span>Text label</span>
+                                        </label>
                                     </FormGroup>
                                 </div>
                             </div>
@@ -101,24 +137,60 @@ function PhoneFilter() {
                             <div className={'right-block'}>
                                 <div>
                                     <h2>Ответ</h2>
-                                    <FormGroup>
-                                        <FormControlLabel control={<Checkbox/>} label="Text label"/>
-                                        <FormControlLabel control={<Checkbox/>} label="Text label"/>
-                                        <FormControlLabel control={<Checkbox/>} label="Text label"/>
-                                        <FormControlLabel control={<Checkbox/>} label="Text label"/>
-                                        <FormControlLabel control={<Checkbox/>} label="Text label"/>
-                                        <FormControlLabel control={<Checkbox/>} label="Text label"/>
+                                    <FormGroup className={'check-main'}>
+                                        <label className={'checkbox-filter'}>
+                                            <input type="checkbox" />
+                                            <span>Text label</span>
+                                        </label>
+                                        <label className={'checkbox-filter'}>
+                                            <input type="checkbox" />
+                                            <span>Text label</span>
+                                        </label>
+                                        <label className={'checkbox-filter'}>
+                                            <input type="checkbox" />
+                                            <span>Text label</span>
+                                        </label>
+                                        <label className={'checkbox-filter'}>
+                                            <input type="checkbox" />
+                                            <span>Text label</span>
+                                        </label>
+                                        <label className={'checkbox-filter'}>
+                                            <input type="checkbox" />
+                                            <span>Text label</span>
+                                        </label>
+                                        <label className={'checkbox-filter'}>
+                                            <input type="checkbox" />
+                                            <span>Text label</span>
+                                        </label>
                                     </FormGroup>
                                 </div>
                                 <div>
                                     <h2>Портативность</h2>
-                                    <FormGroup>
-                                        <FormControlLabel control={<Checkbox/>} label="Text label"/>
-                                        <FormControlLabel control={<Checkbox/>} label="Text label"/>
-                                        <FormControlLabel control={<Checkbox/>} label="Text label"/>
-                                        <FormControlLabel control={<Checkbox/>} label="Text label"/>
-                                        <FormControlLabel control={<Checkbox/>} label="Text label"/>
-                                        <FormControlLabel control={<Checkbox/>} label="Text label"/>
+                                    <FormGroup className={'check-main'}>
+                                        <label className={'checkbox-filter'}>
+                                            <input type="checkbox" />
+                                            <span>Text label</span>
+                                        </label>
+                                        <label className={'checkbox-filter'}>
+                                            <input type="checkbox" />
+                                            <span>Text label</span>
+                                        </label>
+                                        <label className={'checkbox-filter'}>
+                                            <input type="checkbox" />
+                                            <span>Text label</span>
+                                        </label>
+                                        <label className={'checkbox-filter'}>
+                                            <input type="checkbox" />
+                                            <span>Text label</span>
+                                        </label>
+                                        <label className={'checkbox-filter'}>
+                                            <input type="checkbox" />
+                                            <span>Text label</span>
+                                        </label>
+                                        <label className={'checkbox-filter'}>
+                                            <input type="checkbox" />
+                                            <span>Text label</span>
+                                        </label>
                                     </FormGroup>
                                 </div>
                                 <div>

@@ -14,7 +14,7 @@ const Footer = () => {
 					<div className='block1'>
 						<div>
 							<img src={logo} alt="" />
-							<p>Behoof</p>
+							<p >Behoof</p>
 						</div>
 						<p className='me'>Мы в соц сетях</p>
 						<div className='imgs'>

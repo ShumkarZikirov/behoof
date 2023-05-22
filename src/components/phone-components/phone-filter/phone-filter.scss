@@ -47,6 +47,9 @@
                     gap: 12px;
                     width: 45%;
                     .left-price{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 16px;
                         form{
                             width: 100%;
                             display: flex;
@@ -93,12 +96,50 @@
             .right-block{
                 display: flex;
                 align-items: flex-start;
-                gap: 40px;
+                justify-content: space-between;
+                //gap: 80px;
+                width: 100%;
             }
         }
     }
     .btn-mobile{
         display: none;
+    }
+    .check-main{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        margin-top: 12px;
+        .checkbox-filter{
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            input{
+                appearance: none;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                border: 1px solid #FF4D4D;
+                &:checked{
+                    background-color:  #FF4D4D;
+                }
+                &:checked::before{
+                    content: '✔';
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 12px;
+                    color: white;
+                }
+            }
+            span{
+                font-size: 14px;
+                font-weight: 400;
+            }
+        }
     }
 
 }
@@ -124,7 +165,7 @@
         width: 100%;
         .flex{
             position: fixed;
-            height: 100vh;
+            height: 130vh;
             width: 100%;
             background-color: rgba(0,0,0,0.4);
             bottom: 0;
@@ -223,7 +264,7 @@
             left: 0;
             background-color: rgba(0,0,0,0.4);
             width: 100%;
-            height: 100vh;
+            height: 150vh;
             padding-bottom: 10px;
             opacity: 0;
             &-block{
@@ -280,6 +321,192 @@
             }
         }
     }
+    .css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root{
+        color: #FF4D4D !important;
+    }
+    .css-hyxlzm{
+        color: #FF4D4D;
+    }
+    .css-j204z7-MuiFormControlLabel-root .MuiFormControlLabel-label {
+        font-size: 14px;
+    }
+    .sort.active{
+        opacity: 1;
+    }
+    .flex.active{
+        opacity: 1;
+    }
+
+}
+@media only screen and (max-width: 500px){
+    .filter{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        width: 95%;
+        margin: 32px auto 0;
+        .flex{
+            position: fixed;
+            height: 130vh;
+            width: 100%;
+            background-color: rgba(0,0,0,0.4);
+            bottom: 0;
+            left: 0;
+            z-index: 6000;
+            opacity: 0;
+            .filter-main{
+                position: fixed;
+                border-radius: 15px 15px 0 0;
+                z-index: 6000;
+                bottom: 0;
+                overflow: scroll;
+                height: 500px;
+                display: flex;
+                flex-direction: column;
+                gap: 0;
+                background-color: white;
+                width: 100%;
+                h1{
+                    font-size: 18px;
+                }
+                h2{
+                    font-size: 16px;
+                }
+                .filter-left{
+                    display: flex;
+                    flex-direction: column;
+                    height: auto;
+                    padding: 20px;
+                    gap: 12px;
+                    width: 88%;
+                    border: none;
+                    .close{
+                        display: block;
+                        border: none;
+                        background-color: #FDFDFD;
+                        position: absolute;
+                        right: 2%;
+                        top: 1%;
+                        svg {
+                            font-size: 30px;
+                            color: #FF4D4D;
+                        }
+                    }
+                    .filter-left-main{
+                        flex-direction: column;
+                        gap: 20px;
+                        .left-1{
+                            width: 80%;
+                        }
+                    }
+                }
+                .filter-right{
+                    width: 80%;
+                    display: flex;
+                    flex-direction: column;
+                    border: none;
+                    .right-main{
+                        display: flex;
+                        justify-content: space-between;
+                        .button-filter{
+                            display: none;
+                        }
+
+                    }
+                    .right-block{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        gap: 20px;
+                    }
+                }
+            }
+
+        }
+        .btn-mobile{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            button{
+                width: 100%;
+                height: 50px;
+                background-color: #F2F5F9;
+                color: #FF4D4D;
+            }
+        }
+        .select-filter{
+            display: none;
+            position: absolute;
+        }
+        .sort{
+            position: fixed;
+            z-index: 6000;
+            transition: 0.5s;
+            bottom: 0;
+            left: 0;
+            background-color: rgba(0,0,0,0.4);
+            width: 100%;
+            height: 150vh;
+            padding-bottom: 10px;
+            opacity: 0;
+            &-block{
+                border-radius: 15px 15px 0 0;
+                position: fixed;
+                bottom: 0;
+                height: 200px;
+                background-color: white;
+                margin-bottom: 0;
+                width: 100%;
+                z-index: 6000;
+                .sort-title{
+                    font-size: 18px ;
+                    font-weight: 600;
+                    margin-top: 15px;
+                    margin-left: 10px;
+                }
+                ul{
+                    padding: 0;
+                    margin-top: 30px;
+                    display: flex;
+                    flex-direction: column;
+
+                    width: 100%;
+                    li{
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        color: #7E8794;
+                        padding-left: 10px;
+                        height: 45px;
+                        &:hover{
+                            background-color: #FFEEEE;
+                            color: #FF4D4D;
+                        }
+                    }
+                }
+
+                .close{
+                    display: block;
+                    border: none;
+                    background-color: #FDFDFD;
+                    position: absolute;
+                    right: 2%;
+                    top: 0;
+                    padding: 10px;
+                    svg {
+                        font-size: 30px;
+                        color: #FF4D4D;
+                    }
+
+
+                }
+            }
+        }
+
+
+    }
+
     .css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root{
         color: #FF4D4D !important;
     }

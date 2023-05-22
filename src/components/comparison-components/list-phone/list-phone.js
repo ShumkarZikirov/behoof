@@ -61,7 +61,7 @@ function ListPhone({
                     })
                 }
                 {
-                    comparison.length < 4 ?
+                    comparison.length < 4 && width > 959 ?
                         <div className={'listPhone-main add-mobile'} style={{border: 'none', alignItems: 'center'}}>
                             <Button variant="contained">Добавить товар</Button>
                         </div> : null

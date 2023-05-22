@@ -1,0 +1,52 @@
+.magazine{
+    border: 1px solid #F2F5F9;
+    border-radius: 12px;
+    padding: 20px;
+    max-width: 345px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    &-top{
+        display: flex;
+        justify-content: space-between;
+        h1{
+            font-size: 24px;
+            font-weight: 700;
+        }
+        img{
+            max-width: 105px;
+        }
+    }
+    p{
+        font-size: 16px;
+        font-weight: 500;
+        color: #30D170;
+    }
+    .delivery{
+        color: #7E8794;
+    }
+    &-img{
+
+        img{
+           object-position: bottom;
+        }
+        button{
+
+            border: none;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 16px;
+            color: #FF4D4D;
+            font-weight: 500;
+            span{
+                display: flex;
+                svg{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
