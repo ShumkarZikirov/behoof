@@ -81,10 +81,11 @@
 
 @media only screen and (max-width: 500px){
     .otzyv{
+        width: 90%;
+        margin: 20px auto 0;
         display: flex;
         flex-direction: column;
         gap: 20px;
-        margin-top: 20px;
         h1{
             font-size: 16px;
         }

@@ -13,6 +13,7 @@ import './product-detail.scss'
 import Stack from '@mui/material/Stack';
 import Pagination from '../pagination/pagination'
 import {Link, useNavigate} from "react-router-dom";
+import Star from '../../rating-star/star'
 function ProductDetail() {
     const navigate = useNavigate()
     const navigateInfo = () => {
@@ -25,12 +26,13 @@ function ProductDetail() {
                         productInfo.map((elem,index) =>{
                             return(
                                 <div onClick={navigateInfo} key={index} data-aos="fade-up-left" className={'productDetail-main-block'}>
+
                                     <img className={'img-main'} src={elem.img1} alt=""/>
                                     <div className={'detail-info'}>
                                         <div className={'detail-info-top'}>
                                               <div>
                                                   <p className={'detail-osenka'}>{elem.osenka} Оценка экспертов</p>
-                                                  <p className={'detail-rating'}><span>{elem.rating}.0</span> <Rating name="read-only" color={'#FF4D4D'}  value={elem.rating} readOnly /> <span>{elem.otziv} Отзывов</span></p>
+                                                  <p className={'detail-rating'}><span>{elem.rating}.0</span> <Star number={elem.rating}/> <span>{elem.otziv} Отзывов</span></p>
                                               </div>
                                             <div className='buttons'>
                                                 <Fab size="small" color="inherit" aria-label="add">

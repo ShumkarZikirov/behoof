@@ -13,6 +13,7 @@ import './info-imgs.scss'
 import Fab from "@mui/material/Fab";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
+import Star from "../../rating-star/star";
 
 const InfoImgs = ({width, handlePreviousProduct, handleNextProduct, visibleProducts}) => {
     return (
@@ -46,8 +47,7 @@ const InfoImgs = ({width, handlePreviousProduct, handleNextProduct, visibleProdu
                                     <h1>{elem.title}</h1>
                                     <div>
                                         <p className={'detail-osenka'}>{elem.osenka} Оценка экспертов</p>
-                                        <p className={'detail-rating'}><span>{elem.rating}.0</span> <Rating
-                                            name="read-only" value={elem.rating} readOnly/>
+                                        <p className={'detail-rating'}><span>{elem.rating}.0</span> <Star number={elem.rating}/>
                                             <span>{elem.otziv} Отзывов</span></p>
                                     </div>
                                 </div>

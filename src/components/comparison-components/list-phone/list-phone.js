@@ -75,10 +75,10 @@ function ListPhone({
 
             <div className={'add-comparison'}>
                 <div>
-                    <Button onClick={handlePreviousProductMin} variant={'text'}><span><ArrowBackIcon/></span> 1 из
-                        3 <span><ArrowForwardIcon/></span></Button>
-                    <Button onClick={handleNextProductMin}><span><ArrowBackIcon/></span> 2 из
-                        3 <span><ArrowForwardIcon/></span></Button>
+                    <button onClick={handlePreviousProductMin} variant={'text'}><span><ArrowBackIcon/></span> 1 из
+                        3 <span><ArrowForwardIcon/></span></button>
+                    <button onClick={handleNextProductMin}><span><ArrowBackIcon/></span> 2 из
+                        3 <span><ArrowForwardIcon/></span></button>
                 </div>
                 <Button>Добавить товар</Button>
             </div>

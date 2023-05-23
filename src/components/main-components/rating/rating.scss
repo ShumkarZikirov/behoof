@@ -1,4 +1,4 @@
-.rating{
+.main-rating{
 	display: flex;
 	align-items: center;
 	gap: 1px;
@@ -10,7 +10,7 @@
 	}
 }
 @media only screen and (max-width: 1300px){
-	.rating{
+	.main-rating{
 		width: 100% !important;
 		span{
 			width: 45px;
@@ -19,7 +19,7 @@
 	}
 }
 @media only screen and (max-width: 959px){
-	.rating{
+	.main-rating{
 		width: 160px !important;
 		span{
 			width: 45px;
@@ -28,7 +28,7 @@
 	}
 }
 @media only screen and (max-width: 500px){
-	.rating{
+	.main-rating{
 		display: flex;
 		align-items: center;
 		gap: 1px;

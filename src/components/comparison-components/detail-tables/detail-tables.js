@@ -3,6 +3,7 @@ import './detail-tables.scss'
 import Rating from '@mui/material/Rating';
 import CheckIcon from '@mui/icons-material/Check';
 import CloseIcon from '@mui/icons-material/Close';
+import Star from "../../rating-star/star";
 const DetailTables = ({visibleProducts}) => {
     return (
         <div className={'tables'}>
@@ -13,7 +14,7 @@ const DetailTables = ({visibleProducts}) => {
                     {visibleProducts.map((elem,index) => {
                         return(
                             <div key={index} className={'table'}>
-                                <Rating name="read-only" color={'#FF4D4D'} value={elem.rating} readOnly />
+                                <Star number={elem.rating}/>
                                 <span className={'span-people'}>{elem.people}</span>
                             </div>
                         )})}

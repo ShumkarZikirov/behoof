@@ -3,6 +3,8 @@ import {otzyv} from "../../../arrays/otzyv";
 import Rating from "@mui/material/Rating";
 import Button from '@mui/material/Button';
 import './otzyv.scss'
+import Star from "../../rating-star/star";
+import StarInfo from "../../star-info/star-info";
 const Otzyv = () => {
     return (
         <div className={'otzyv'}>
@@ -16,8 +18,7 @@ const Otzyv = () => {
                                     <img src={elem.avatar} alt=""/>
                                     <div className={'otzyv-top-main'}>
                                         <p className={'name'}>{elem.name}</p>
-                                        <p className={'detail-rating'}><Rating
-                                        name="read-only" value={elem.rating} readOnly/>
+                                        <p className={'detail-rating'}><StarInfo number={elem.rating}/>
                                         <span>{elem.date}</span></p>
                                     </div>
                                 </div>

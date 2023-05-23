@@ -1,0 +1,23 @@
+
+.star{
+    .star-min{
+        display: none;
+    }
+    .star-max{
+        display: block;
+    }
+}
+@media only screen and (max-width: 500px){
+
+    .star{
+        .star-min{
+            display: block;
+            svg{
+                width: 17px;
+            }
+        }
+        .star-max{
+            display: none !important;
+        }
+    }
+}
