@@ -1,4 +1,4 @@
-import React,{useState,useEffect,useLayoutEffect} from 'react';
+import React,{useState,useLayoutEffect} from 'react';
 import './info-product.scss'
 import {Link} from "react-router-dom";
 import InfoImgs from "../../components/info-product/info-imgs/info-imgs";

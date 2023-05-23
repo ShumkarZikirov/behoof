@@ -1,5 +1,5 @@
 import './graphic.scss'
-import React,{useRef,useState,useEffect} from 'react';
+import React,{useRef} from 'react';
 import Eldarado from "../eldarado/eldarado";
 import Sity from "../sity/sity";
 import {

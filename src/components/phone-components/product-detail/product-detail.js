@@ -1,6 +1,5 @@
 import React from 'react';
 import {productInfo} from "../../../arrays/product-info";
-import Rating from '@mui/material/Rating';
 import Fab from "@mui/material/Fab";
 import img2 from "../../../assets/icons/Vector.png";
 import img1 from "../../../assets/icons/chart.png";
@@ -12,7 +11,7 @@ import Button from '@mui/material/Button';
 import './product-detail.scss'
 import Stack from '@mui/material/Stack';
 import Pagination from '../pagination/pagination'
-import {Link, useNavigate} from "react-router-dom";
+import { useNavigate} from "react-router-dom";
 import Star from '../../rating-star/star'
 function ProductDetail() {
     const navigate = useNavigate()

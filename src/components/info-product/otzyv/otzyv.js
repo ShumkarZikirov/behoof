@@ -1,9 +1,7 @@
 import React from 'react';
 import {otzyv} from "../../../arrays/otzyv";
-import Rating from "@mui/material/Rating";
 import Button from '@mui/material/Button';
 import './otzyv.scss'
-import Star from "../../rating-star/star";
 import StarInfo from "../../star-info/star-info";
 const Otzyv = () => {
     return (

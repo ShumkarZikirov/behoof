@@ -21,14 +21,14 @@ import {news} from "../../../arrays/news";
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 
 const Header = () => {
-	const [age, setAge] = React.useState('')
+	const [age] = React.useState('')
 	const [searchTerm, setSearchTerm] = useState('');
 	const [suggestions, setSuggestions] = useState([]);
 	const location = useLocation()
 	const navigate = useNavigate();
 
 	const goBack = () => {
-		navigate(-1); // Перенаправление на предыдущую страницу
+		navigate(-1);
 	};
 	const handleInputChange = (event) => {
 		const searchTerm = event.target.value;
@@ -76,16 +76,16 @@ const Header = () => {
 								<Link style={{color:'black',textDecoration:'none'}} to={'/phone'}>Смартфоны</Link>
 							</MenuItem>
 							<MenuItem className={'menuItem'} >
-								<Link style={{color:'black',textDecoration:'none'}} to={'/electric'}>Teteras electricas</Link>
+								<Link style={{color:'black',textDecoration:'none'}} to={'/error-page'}>Teteras electricas</Link>
 							</MenuItem>
 							<MenuItem className={'menuItem'}>
-								<Link style={{color:'black',textDecoration:'none'}} to={'/electric'}>Стиральные машины</Link>
+								<Link style={{color:'black',textDecoration:'none'}} to={'/error-page'}>Стиральные машины</Link>
 							</MenuItem>
 							<MenuItem className={'menuItem'}>
-								<Link style={{color:'black',textDecoration:'none'}} to={'/electric'}>Телевизоры</Link>
+								<Link style={{color:'black',textDecoration:'none'}} to={'/error-page'}>Телевизоры</Link>
 							</MenuItem>
 							<MenuItem className={'menuItem'}>
-								<Link style={{color:'black',textDecoration:'none'}} to={'/electric'}>Ноутбуки</Link>
+								<Link style={{color:'black',textDecoration:'none'}} to={'/error-page'}>Ноутбуки</Link>
 							</MenuItem>
 						</Select>
 					</FormControl>
@@ -166,13 +166,13 @@ const Header = () => {
 				</div>
 				<div className='header-info-btns'>
 					<Button className='btn' color='inherit' variant="contained" >
-						<Link to={'/'}><img src={heard} alt="" /></Link>
+						<Link to={'/error-page'}><img src={heard} alt="" /></Link>
 					</Button>
 					<Button className='btn' color='inherit' variant="contained" >
 						<Link to={'/comparison'}><img src={chart} alt="" /></Link>
 					</Button>
 					<Button className='btn' color='inherit' variant="contained" >
-						<Link to={'/'}><img src={profil} alt="" /></Link>
+						<Link to={'/error-page'}><img src={profil} alt="" /></Link>
 					</Button>
 				</div>
 			</div>

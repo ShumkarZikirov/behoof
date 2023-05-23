@@ -1,11 +1,9 @@
-import React, {useState} from 'react';
-import {productInfo} from "../../../arrays/product-info";
-import Rating from "@mui/material/Rating";
+import React from 'react';
+
 import crown from '../../../assets/icons/crown.png'
 import RatingInfo from "../rating-info/rating-info";
 import reStore from '../../../assets/image/reStore.png'
 import diagram from '../../../assets/icons/diagram.png'
-import VerticalAlignBottomIcon from '@mui/icons-material/VerticalAlignBottom';
 import icon1 from '../../../assets/image/chart.png'
 import icon2 from '../../../assets/image/Vector.png'
 import Button from '@mui/material/Button';
@@ -15,7 +13,7 @@ import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import Star from "../../rating-star/star";
 
-const InfoImgs = ({width, handlePreviousProduct, handleNextProduct, visibleProducts}) => {
+const InfoImgs = ({ handlePreviousProduct, handleNextProduct, visibleProducts}) => {
     return (
         <div className={'info-product'}>
             {

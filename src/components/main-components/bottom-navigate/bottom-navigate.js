@@ -30,11 +30,11 @@ const BottomNavigate = () => {
                 <img src={img1}/>
                 <p style={{color: location.pathname === '/' ? '#FF4D4D' : '#7E8794'}}>Главная</p>
             </Link>
-            <Link>
+            <Link to={'/error-page'}>
                 <img src={img2}/>
                 <p style={{color: location.pathname === '/catalog' ? '#FF4D4D' : '#7E8794'}}>Каталог</p>
             </Link>
-            <Link>
+            <Link to={'/error-page'}>
                 <img src={img3}/>
                 <p style={{color: location.pathname === '/favourites' ? '#FF4D4D' : '#7E8794'}}>Избранное</p>
             </Link>
@@ -42,7 +42,7 @@ const BottomNavigate = () => {
                 <img src={img4}/>
                 <p style={{color: location.pathname === '/comparison' ? '#FF4D4D' : '#7E8794'}}>Сравнения</p>
             </Link>
-            <Link>
+            <Link to={'/error-page'}>
                 <img src={img5}/>
                 <p style={{color: location.pathname === '/profile' ? '#FF4D4D' : '#7E8794'}}>Профиль</p>
             </Link>
