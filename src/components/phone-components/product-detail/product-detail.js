@@ -13,7 +13,6 @@ import Stack from '@mui/material/Stack';
 import Pagination from '../pagination/pagination'
 import { useNavigate} from "react-router-dom";
 import Star from '../../rating-star/star'
-import Alerts from "../../alert/alert";
 import { toast } from 'react-toastify'
 function ProductDetail() {
     const navigate = useNavigate()

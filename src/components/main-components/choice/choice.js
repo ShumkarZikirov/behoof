@@ -2,7 +2,6 @@ import React from 'react'
 import './choice.scss'
 import {choice} from '../../../arrays/choice'
 import {useNavigate} from "react-router-dom";
-import Alerts from "../../alert/alert";
 
 const Choice = ({text}) => {
 	const navigate = useNavigate()
