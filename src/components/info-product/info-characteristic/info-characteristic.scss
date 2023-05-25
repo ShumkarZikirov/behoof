@@ -23,6 +23,9 @@
                 padding: 8px 12px;
                 background-color: #F6F7FA;
                 border-radius: 8px;
+                display: flex;
+                align-items: center;
+                gap: 8px;
                 span{
                     color: black;
                     font-weight: 500;
@@ -113,6 +116,7 @@
                 }
                 .active-block-btn{
                     padding: 8px 0;
+                    gap: 10px;
                     &-text1{
                         font-size: 14px;
                     }
@@ -129,6 +133,10 @@
     .css-13eg511-MuiButtonBase-root-MuiListItemButton-root:hover{
         padding: 0;
     }
+
+.css-15v8bbv-MuiButtonBase-root-MuiListItemButton-root {
+    padding: 10px 0 0 0  !important;
+}
 .css-13eg511-MuiButtonBase-root-MuiListItemButton-root{
     padding: 0;
 }

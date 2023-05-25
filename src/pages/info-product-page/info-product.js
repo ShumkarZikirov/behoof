@@ -46,7 +46,7 @@ const InfoProductPage = () => {
 
     return (
         <div className={'info-product-page'}>
-            <h4><Link to={'/'}>Главная</Link>/<Link to={'/phone'}>Смартфоны</Link>/ Apple iPhone 13 Pro Max 256 ГБ серый</h4>
+            <h4><Link to={'/'}>Главная</Link><span className={'gray'}>/</span><Link to={'/phone'}>Смартфоны</Link><span>/</span> Apple iPhone 13 Pro Max 256 ГБ серый</h4>
             <div className={'info-product-page'}>
                 <div>
                     <InfoImgs width={width} handlePreviousProduct={handlePreviousProduct}  handleNextProduct={handleNextProduct} visibleProducts={visibleProducts}/>

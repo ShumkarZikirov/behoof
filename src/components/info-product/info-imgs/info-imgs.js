@@ -22,12 +22,12 @@ const InfoImgs = ({ handlePreviousProduct, handleNextProduct, visibleProducts}) 
                         <div key={index} className={'info-product-main'}>
                             <div className={'info-product-main-imgs'}>
                                     <div className={'btn-arrows'}>
-                                        <Fab className={'btn-pagin btn-left'} onClick={handlePreviousProduct} size="medium"
+                                        <Fab sx={{boxShadow:2}} className={'btn-pagin btn-left'} onClick={handlePreviousProduct} size="medium"
                                              color="inherit" aria-label="add">
                                             <ArrowBackIosIcon/>
                                         </Fab>
 
-                                        <Fab size="medium" onClick={handleNextProduct} className={'btn-pagin btn-right'} color="inherit"
+                                        <Fab sx={{boxShadow:2}} size="medium" onClick={handleNextProduct} className={'btn-pagin btn-right'} color="inherit"
                                              aria-label="add">
                                             <ArrowForwardIosIcon/>
                                         </Fab>
@@ -101,7 +101,7 @@ const InfoImgs = ({ handlePreviousProduct, handleNextProduct, visibleProducts}) 
                                     </div>
                                 </div>
                                 <div className={'colors-block'}>
-                                    <h1>Цвет:</h1>
+                                    <h1 className={'mem'}>Цвет:</h1>
                                     <ul className={'colors-block-ul'}>
                                         <li><span style={{backgroundColor: elem.colors.white}}></span></li>
                                         <li><span style={{backgroundColor: elem.colors.yellow}}></span></li>
@@ -113,9 +113,9 @@ const InfoImgs = ({ handlePreviousProduct, handleNextProduct, visibleProducts}) 
                                     </ul>
                                 </div>
                                 <div className={'memories-block'}>
-                                    <h1>Память:</h1>
+                                    <h1 className={'mem'}>Память:</h1>
                                     <div className={'memories-block-btns'}>
-                                        <button>{elem.memores.ram1}</button>
+                                        <button >{elem.memores.ram1}</button>
                                         <button>{elem.memores.ram2}</button>
                                         <button>{elem.memores.ram3}</button>
                                     </div>

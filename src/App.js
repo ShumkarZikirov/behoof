@@ -11,9 +11,13 @@ import ComparisonPage from "./pages/comparison-page/comparison-page";
 import InfoProductPage from "./pages/info-product-page/info-product";
 import ReviewPage from "./pages/review-page/review-page";
 import ErrorPage from "./pages/errror-page/errror-page";
+import {toast, ToastContainer} from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import {Link, useLocation} from "react-router-dom";
 function App() {
+    const location = useLocation()
   const [windowWidth, setWindowWidth] = useState(window.innerWidth)
   useEffect(() => {
     const handleResize = () => setWindowWidth(window.innerWidth)
@@ -21,7 +25,13 @@ function App() {
       AOS.init()
     return () => window.removeEventListener('resize', handleResize)
   }, [])
-
+    if(location.pathname === '/error-page'){
+         toast.error('Ошибка',{
+            autoClose: 3000,
+            hideProgressBar: true,
+            progress: undefined,
+        })
+    }
   return (
     <div className="App">
         <Header/>
@@ -37,6 +47,12 @@ function App() {
         <Footer />
       </div>
       {windowWidth <= 959 ? <BottomNavigate /> : null}
+        <ToastContainer position={'top-right'} hideProgressBar={false} newestOnTop={false}
+                        rtl={false}
+                        style={{
+                            height:'30px'
+                        }}
+        />
     </div>
   )
 }

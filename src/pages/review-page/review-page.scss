@@ -104,6 +104,13 @@
                 }
             }
         }
+        .news-review{
+            h1{
+                font-size: 24px;
+                font-weight: 600;
+                margin-top: 60px;
+            }
+        }
 
     }
     .news-block .news-info .info-text h4{
@@ -271,6 +278,9 @@
                 }
             }
 
+        }
+        .news{
+            margin: 0;
         }
     }
 }

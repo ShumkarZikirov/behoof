@@ -28,7 +28,7 @@ function ListPhone({
             </div>
             <div className={'listPhone-block'}>
                 {width < 959 ? null :
-                    <Fab className={'btn-pagin btn-left'} onClick={handlePreviousProduct} size="medium"
+                    <Fab sx={{boxShadow:2}} className={'btn-pagin btn-left'} onClick={handlePreviousProduct} size="medium"
                          color="secondary" aria-label="add">
                         <ArrowBackIosIcon/>
                     </Fab>}
@@ -38,7 +38,7 @@ function ListPhone({
                             <div key={index} className={'listPhone-main'}>
                                 <div className={'listPhone-img'}>
                                     <img className={'img-main'} src={elem.img} alt=""/>
-                                    <Fab className={'delete-btn'} size="small" color="inherit" aria-label="add">
+                                    <Fab sx={{boxShadow:2}} className={'delete-btn'} size="small" color="inherit" aria-label="add">
                                         <img src={icon} alt=""/>
                                     </Fab>
                                 </div>
@@ -50,7 +50,7 @@ function ListPhone({
                                             <p>Цена</p>
                                             <h4 className={'price-bottom'}>{elem.price}</h4>
                                         </div>
-                                        <Fab size="small" color="inherit" aria-label="add">
+                                        <Fab sx={{boxShadow:2}} size="small" color="inherit" aria-label="add">
                                             <img src={img2} alt=""/>
                                         </Fab>
                                     </div>

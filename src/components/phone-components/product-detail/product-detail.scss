@@ -430,9 +430,9 @@
                                 align-items: center;
                                 background-color: #F6F7FA;
                                 border-radius: 12px;
-                                height: 45px;
-                                padding: 0 15px;
-                                font-size: 12px;
+                                height: 30px;
+                                padding: 0 10px;
+                                font-size: 13px;
 
                             }
                             .css-ryrseu-MuiRating-root{
@@ -553,9 +553,9 @@
                                 align-items: center;
                                 background-color: #F6F7FA;
                                 border-radius: 12px;
-                                height: 45px;
+                                height: 25px;
                                 padding: 0 15px;
-                                font-size: 10px;
+                                font-size: 12px;
 
                             }
                             .css-ryrseu-MuiRating-root{
@@ -665,19 +665,21 @@
                         display: flex;
                         justify-content: space-between;
                         align-items: center;
-                        div{
+                        .rating-top-div{
                             display: flex;
                             align-items: center;
+                            justify-content: space-between;
                             gap: 10px;
+                            width: 100%;
                             .detail-rating,.detail-osenka{
                                 display: flex;
                                 align-items: center;
                                 background-color: #F6F7FA;
                                 border-radius: 12px;
-                                height: 45px;
-                                padding: 0 15px;
-                                font-size: 10px;
-
+                                height: 25px;
+                                padding: 0 5px ;
+                                font-size: 12px;
+                                width: 100%;
                             }
                             .css-ryrseu-MuiRating-root{
                                 width: 20px !important;

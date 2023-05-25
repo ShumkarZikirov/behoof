@@ -20,10 +20,10 @@ const Slider = () => {
 											<h4>{elem.title}</h4>
 										</div>
 										<div className='rating-top-btns'>
-											<Fab size="small" color="inherit" aria-label="add">
+											<Fab sx={{boxShadow:2}} size="small" color="inherit" aria-label="add">
 												<img src={img2} alt="" />
 											</Fab>
-											<Fab size="small" color="inherit" aria-label="add">
+											<Fab sx={{boxShadow:2}} size="small" color="inherit" aria-label="add">
 												<img src={img1} alt="" />
 											</Fab>
 										</div>

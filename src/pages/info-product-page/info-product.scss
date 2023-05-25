@@ -7,16 +7,18 @@
         margin:16px 0 32px 0;
         display: flex;
         align-items: center;
-        gap: 3px;
+        gap: 12px;
         a{
             color: #A1ABB9;
             text-decoration: none;
         }
+        .gray{
+            color: #A1ABB9;
+        }
     }
     &-flex{
         display: flex;
-        align-items: flex-start;
-        gap: 20px;
+        justify-content: space-between;
         .flex-left{
             width: 47%;
             position: relative;

@@ -1,3 +1,4 @@
+
 .filter{
     display: flex;
     flex-direction: column;
@@ -34,6 +35,7 @@
             padding: 20px;
             gap: 12px;
             width: 100%;
+            height: 344px;
             .close{
                 display: none;
 
@@ -71,6 +73,7 @@
         .filter-right{
             width: 100%;
             display: flex;
+            height: 344px;
             flex-direction: column;
             gap: 12px;
             border-radius: 12px;
@@ -97,8 +100,8 @@
                 display: flex;
                 align-items: flex-start;
                 justify-content: space-between;
-                //gap: 80px;
-                width: 100%;
+                //gap: 20px;
+                width: 90%;
             }
         }
     }
@@ -122,12 +125,12 @@
                 width: 20px;
                 height: 20px;
                 border-radius: 50%;
-                border: 1px solid #FF4D4D;
+                border: 2px solid #FF4D4D;
                 &:checked{
                     background-color:  #FF4D4D;
                 }
                 &:checked::before{
-                    content: '✔';
+                    content: '\2713';
                     display: flex;
                     align-items: center;
                     justify-content: center;
@@ -196,7 +199,7 @@
                     height: auto;
                     padding: 20px;
                     gap: 12px;
-                    width: 88%;
+                    width: 100%;
                     border: none;
                     .close{
                         display: block;
@@ -214,7 +217,7 @@
                         flex-direction: column;
                         gap: 20px;
                         .left-1{
-                            width: 80%;
+                            width: 100%;
                         }
                     }
                 }
@@ -222,6 +225,7 @@
                     width: 80%;
                     display: flex;
                     flex-direction: column;
+                    height: auto;
                     border: none;
                     .right-main{
                         display: flex;
@@ -397,7 +401,7 @@
                         flex-direction: column;
                         gap: 20px;
                         .left-1{
-                            width: 80%;
+                            width: 100%;
                         }
                     }
                 }
@@ -454,7 +458,7 @@
                 border-radius: 15px 15px 0 0;
                 position: fixed;
                 bottom: 0;
-                height: 200px;
+                height: 210px;
                 background-color: white;
                 margin-bottom: 0;
                 width: 100%;
@@ -466,19 +470,21 @@
                     margin-left: 10px;
                 }
                 ul{
-                    padding: 0;
+                    padding: 0 0 20px 0;
                     margin-top: 30px;
                     display: flex;
                     flex-direction: column;
-
                     width: 100%;
                     li{
                         width: 100%;
                         display: flex;
                         align-items: center;
                         color: #7E8794;
-                        padding-left: 10px;
+                        padding-left: 15px;
                         height: 45px;
+                        &:last-child{
+                            padding-bottom: 10px;
+                        }
                         &:hover{
                             background-color: #FFEEEE;
                             color: #FF4D4D;

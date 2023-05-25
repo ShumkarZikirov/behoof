@@ -13,10 +13,17 @@ import Stack from '@mui/material/Stack';
 import Pagination from '../pagination/pagination'
 import { useNavigate} from "react-router-dom";
 import Star from '../../rating-star/star'
+import Alerts from "../../alert/alert";
+import { toast } from 'react-toastify'
 function ProductDetail() {
     const navigate = useNavigate()
     const navigateInfo = () => {
         navigate('/info-product')
+        toast.success('Успешно',{
+            autoClose: 3000,
+            hideProgressBar: true,
+            progress: undefined,
+        })
     }
     return (
         <div className={'productDetail'}>
@@ -24,20 +31,20 @@ function ProductDetail() {
                     {
                         productInfo.map((elem,index) =>{
                             return(
-                                <div onClick={navigateInfo} key={index} data-aos="fade-up-left" className={'productDetail-main-block'}>
+                                <div onClick={navigateInfo} key={index} data-aos="fade-up-right" className={'productDetail-main-block'}>
 
                                     <img className={'img-main'} src={elem.img1} alt=""/>
                                     <div className={'detail-info'}>
                                         <div className={'detail-info-top'}>
-                                              <div>
+                                              <div className={'rating-top-div'}>
                                                   <p className={'detail-osenka'}>{elem.osenka} Оценка экспертов</p>
                                                   <p className={'detail-rating'}><span>{elem.rating}.0</span> <Star number={elem.rating}/> <span>{elem.otziv} Отзывов</span></p>
                                               </div>
                                             <div className='buttons'>
-                                                <Fab size="small" color="inherit" aria-label="add">
+                                                <Fab sx={{boxShadow:2}} size="small" color="inherit" aria-label="add">
                                                     <img src={img2} alt="" />
                                                 </Fab>
-                                                <Fab size="small" color="inherit" aria-label="add">
+                                                <Fab sx={{boxShadow:2}} size="small" color="inherit" aria-label="add">
                                                     <img src={img1} alt="" />
                                                 </Fab>
                                             </div>

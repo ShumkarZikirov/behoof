@@ -30,5 +30,37 @@ p,h1,h2,h3,h4{
 		background-color: #F2F5F9;
 	}
 }
-
+.Toastify__toast-theme--light{
+	width: 100%;
+	position: absolute !important;
+	top: 200% !important;
+	min-height: 45px !important;
+	border-radius: 12px !important;
+}
+.Toastify__close-button--light{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	top:32%;
+	right: 5%;
+}
+@media only screen and (max-width: 500px){
+	.Toastify__toast-theme--light{
+		width: 70%;
+		position: absolute !important;
+		top: 400%;
+		right: 5%;
+		min-height: 45px !important;
+		border-radius: 12px !important;
+	}
+	.Toastify__close-button--light{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: absolute;
+		top:32%;
+		right: 5%;
+	}
+}
 

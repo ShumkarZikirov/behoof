@@ -28,10 +28,10 @@ const Product = () => {
 											<h2>{elem.price}</h2>
 										</div>
 										<div className='buttons'>
-											<Fab size="small" color="inherit" aria-label="add">
+											<Fab sx={{boxShadow:2}} size="small" color="inherit" aria-label="add">
 												<img src={img2} alt="" />
 											</Fab>
-											<Fab size="small" color="inherit" aria-label="add">
+											<Fab sx={{boxShadow:2}} size="small" color="inherit" aria-label="add">
 												<img src={img1} alt="" />
 											</Fab>
 										</div>
