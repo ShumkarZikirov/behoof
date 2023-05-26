@@ -32,6 +32,7 @@ function PhoneFilter() {
                     <div className={'filter-main'} onClick={(e) => e.stopPropagation()}>
                         <div className={'filter-left'}>
                             <button onClick={() => setFilter(false)} className={'close'}><CloseIcon/></button>
+                            <span onClick={() => setFilter(false)} className={'line'}></span>
                             <h1>Качественные характеристики</h1>
                             <div className={'filter-left-main'}>
                                 <div className={'left-1'}>
@@ -239,6 +240,7 @@ function PhoneFilter() {
                 </FormControl>
             <div className={sort? 'sort active':'sort'} onClick={() => setSort(false)} style={{display:sort?'block':'none'}}>
                 <div className={'sort-block'}  onClick={(e) => e.stopPropagation()}>
+                    <span onClick={() => setSort(false)} className={'line'}></span>
                     <button onClick={() => setSort(false)} className={'close'}><CloseIcon/></button>
                     <h1 className={'sort-title'}>Сортировка</h1>
                     <ul>

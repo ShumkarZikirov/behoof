@@ -1,6 +1,8 @@
 
 .graphic{
     width: 51%;
+    position: relative;
+    bottom: 40px;
     &-main{
         position: relative;
         border: 1px solid #F2F5F9;
@@ -42,7 +44,7 @@
     .store{
         display: flex;
         gap: 20px;
-        margin:20px 0 100px ;
+        margin:20px 0 40px ;
         flex-wrap: wrap;
         justify-content: center;
     }
@@ -54,15 +56,26 @@
         justify-content: center;
     }
 }
-
+@media only screen and (max-width: 1390px){
+    .graphic{
+        bottom: 10px;
+    }
+}
+@media only screen and (max-width: 1390px){
+    .graphic{
+        position: static;
+        margin-top: 20px;
+    }
+}
 @media only screen and (max-width: 959px){
     .graphic{
         width: 100%;
+        margin-top: 0;
         .store{
             display: flex;
             flex-wrap: nowrap;
             overflow: scroll;
-            margin: 20px 0 20px;
+            margin: 20px 0 0;
             align-items: flex-start;
             justify-content: flex-start;
             &::-webkit-scrollbar{width: 0}

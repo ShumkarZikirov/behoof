@@ -7,7 +7,7 @@
         h4{
             display: flex;
             align-items: center;
-            gap: 5px;
+            gap: 12px;
             font-size: 16px;
             font-weight: 400;
             margin:16px 0 32px 0;
@@ -20,7 +20,7 @@
             display: flex;
             flex-direction: column;
             gap: 30px;
-            margin-bottom: 40px;
+            margin-bottom: 10px;
             h1{
                 font-size: 40px;
             }
@@ -125,6 +125,17 @@
         margin: auto;
         &-main{
             width: 95%;
+            .choice{
+                width: 100%;
+                h1{
+                    font-size: 16px;
+                }
+                &-block{
+                    position: relative;
+                    right: 15px;
+
+                }
+            }
             h4{
                 display: none;
             }

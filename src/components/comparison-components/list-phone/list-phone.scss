@@ -225,25 +225,29 @@
             justify-content: center;
             width: 100%;
             button{
-               color: #FF4D4D;
+                color: #FF4D4D;
                 width: 100%;
                 border: none;
                 background-color: white;
                 padding: 10px;
-                margin: auto;
             }
             div{
                 display: flex;
-                margin: 10px auto 0;
+                justify-content: space-between;
+                margin: 0;
+                width: 90%;
                 gap: 0;
                 button{
                     border-radius: 12px;
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
-                    width: 172px;
+                    margin: 0;
+                    width: 250px;
                     font-size: 12px;
                     color: #7E8794;
+                    background-color: white;
+                    border: none;
                     span{
                         width: 40px;
                         height: 40px;
@@ -364,6 +368,7 @@
             display: flex;
             margin:0 auto 0 !important;
             gap: 0;
+            width: 100% !important;
             button{
                 border-radius: 12px;
                 display: flex;

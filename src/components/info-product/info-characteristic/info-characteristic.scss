@@ -16,6 +16,7 @@
             display: flex;
             align-items: center;
             gap: 10px;
+            flex-wrap: wrap;
             p{
                 font-size: 13px;
                 font-weight: 400;
@@ -77,6 +78,12 @@
             }
         }
     }
+    .css-13eg511-MuiButtonBase-root-MuiListItemButton-root:hover{
+        padding: 0;
+    }
+}
+.css-15v8bbv-MuiButtonBase-root-MuiListItemButton-root {
+    padding: 10px 0 0 0  !important;
 }
 @media only screen and (max-width: 500px){
     .info-characteristic{

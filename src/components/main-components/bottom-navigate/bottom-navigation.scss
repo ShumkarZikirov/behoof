@@ -10,15 +10,28 @@
         flex-direction: column;
         align-items: center;
         text-decoration: none;
-
+        gap: 4px;
         img{
             width: 20px;
             object-fit: cover;
         }
         p{
-            font-size: 10px;
+            font-size: 11px;
             color: #7E8794;
 
         }
+    }
+}
+@media only screen and (max-width: 959px){
+    .bottom-navigate{
+        a{
+            img{
+                width: 22px;
+                object-fit: cover;
+            }
+        }
+    }
+    .css-13y1jin-MuiBottomNavigation-root{
+        height: 50px !important;
     }
 }

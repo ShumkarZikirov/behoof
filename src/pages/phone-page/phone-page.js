@@ -9,7 +9,7 @@ function PhonePage() {
     return (
         <div className={'phone-page'}>
             <div className={'phone-page-wrapper'}>
-                <h4><Link to={'/'}>Главная</Link>/ Смартфоны</h4>
+                <h4><Link to={'/'}>Главная</Link><span>/</span> Смартфоны</h4>
                 <div className={'phone-page-main'}>
                     <h1 className={'title'}>Смартфоны</h1>
                     <p className={'none'}>Все что нужно знать при выборе <button>Смартфона <img src={icon} alt=""/></button></p>
