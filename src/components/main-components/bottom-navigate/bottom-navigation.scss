@@ -25,10 +25,20 @@
 @media only screen and (max-width: 959px){
     .bottom-navigate{
         a{
+            .css-fvc8ir-MuiBadge-badge{
+                top: 20%;
+                background-color: #FF4D4D;
+                min-width: 16px !important;
+                height: 16px;
+                padding: 0 !important;
+                color: white;
+                font-size: 11px;
+            }
             img{
                 width: 22px;
                 object-fit: cover;
             }
+
         }
     }
     .css-13y1jin-MuiBottomNavigation-root{

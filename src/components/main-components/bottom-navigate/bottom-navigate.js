@@ -6,6 +6,7 @@ import img3 from '../../../assets/icons/3.png'
 import img4 from '../../../assets/icons/4.png'
 import img5 from '../../../assets/icons/5.png'
 import './bottom-navigation.scss'
+import Badge from '@mui/material/Badge';
 import {Link, useLocation} from "react-router-dom";
 
 const BottomNavigate = () => {
@@ -35,7 +36,9 @@ const BottomNavigate = () => {
                 <p style={{color: location.pathname === '/catalog' ? '#FF4D4D' : '#7E8794'}}>Каталог</p>
             </Link>
             <Link to={'/error-page'}>
-                <img src={img3}/>
+                <Badge badgeContent={1} color="default">
+                    <img className={'izbr'} src={img3}/>
+                </Badge>
                 <p style={{color: location.pathname === '/favourites' ? '#FF4D4D' : '#7E8794'}}>Избранное</p>
             </Link>
             <Link to={'/comparison'}>

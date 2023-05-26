@@ -20,6 +20,7 @@ import 'aos/dist/aos.css';
 function App() {
     const location = useLocation()
     const {pathname} = useLocation();
+    const [isOnline, setIsOnline] = useState(navigator.onLine);
     const [windowWidth, setWindowWidth] = useState(window.innerWidth)
     const scroll = Scroll.animateScroll;
     useEffect(() => {
@@ -38,7 +39,26 @@ function App() {
     useEffect(() => {
         scroll.scrollTo(0, 0)
     }, [pathname]);
+    useEffect(() => {
+        const handleOffline = () => {
+            setIsOnline(false);
+        };
 
+        const handleOnline = () => {
+            setIsOnline(true);
+        };
+
+        window.addEventListener('offline', handleOffline);
+        window.addEventListener('online', handleOnline);
+
+        return () => {
+            window.removeEventListener('offline', handleOffline);
+            window.removeEventListener('online', handleOnline);
+        };
+    }, []);
+    if (!isOnline) {
+        return <ErrorPage />;
+    }
     return (
         <div className="App">
             <Header/>
