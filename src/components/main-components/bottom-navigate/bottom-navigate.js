@@ -36,7 +36,7 @@ const BottomNavigate = () => {
                 <p style={{color: location.pathname === '/catalog' ? '#FF4D4D' : '#7E8794'}}>Каталог</p>
             </Link>
             <Link to={'/error-page'}>
-                <Badge badgeContent={1} color="default">
+                <Badge  badgeContent={1} color="default">
                     <img className={'izbr'} src={img3}/>
                 </Badge>
                 <p style={{color: location.pathname === '/favourites' ? '#FF4D4D' : '#7E8794'}}>Избранное</p>
