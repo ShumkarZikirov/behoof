@@ -22,12 +22,12 @@ const InfoImgs = ({ handlePreviousProduct, handleNextProduct, visibleProducts}) 
                         <div key={index} className={'info-product-main'}>
                             <div className={'info-product-main-imgs'}>
                                     <div className={'btn-arrows'}>
-                                        <Fab sx={{boxShadow:2}} className={'btn-pagin btn-left'} onClick={handlePreviousProduct} size="medium"
+                                        <Fab sx={{boxShadow:2,height:30,width:30}} className={'btn-pagin btn-left'}  onClick={handlePreviousProduct} size="medium"
                                              color="inherit" aria-label="add">
                                             <ArrowBackIosIcon/>
                                         </Fab>
 
-                                        <Fab sx={{boxShadow:2}} size="medium" onClick={handleNextProduct} className={'btn-pagin btn-right'} color="inherit"
+                                        <Fab sx={{boxShadow:2,height:30,width:30}} size="medium" onClick={handleNextProduct} className={'btn-pagin btn-right'} color="inherit"
                                              aria-label="add">
                                             <ArrowForwardIosIcon/>
                                         </Fab>
