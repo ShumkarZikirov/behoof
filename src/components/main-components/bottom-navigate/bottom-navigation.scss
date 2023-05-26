@@ -20,23 +20,31 @@
             color: #7E8794;
 
         }
+        .show-number{
+            top: 2px;
+            position: relative;
+            span{
+                position: absolute;
+                background-color: #FF4D4D;
+                width: 16px;
+                height: 16px;
+                border-radius: 50%;
+                top: -20%;
+                right: -50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 12px;
+                color: white;
+            }
+        }
     }
 }
-.css-fvc8ir-MuiBadge-badge{
-    background-color: #FF4D4D !important;
-}
+
 @media only screen and (max-width: 959px){
     .bottom-navigate{
         a{
-            .css-fvc8ir-MuiBadge-badge{
-                top: 20%;
-                background-color: #FF4D4D !important;
-                min-width: 16px !important;
-                height: 16px;
-                padding: 0 !important;
-                color: white;
-                font-size: 11px;
-            }
+
             img{
                 width: 22px;
                 object-fit: cover;

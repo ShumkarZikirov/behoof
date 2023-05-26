@@ -36,9 +36,10 @@ const BottomNavigate = () => {
                 <p style={{color: location.pathname === '/catalog' ? '#FF4D4D' : '#7E8794'}}>Каталог</p>
             </Link>
             <Link to={'/error-page'}>
-                <Badge  badgeContent={1} >
+                <div  className={'show-number'}>
                     <img className={'izbr'} src={img3}/>
-                </Badge>
+                    <span>1</span>
+                </div>
                 <p style={{color: location.pathname === '/favourites' ? '#FF4D4D' : '#7E8794'}}>Избранное</p>
             </Link>
             <Link to={'/comparison'}>
