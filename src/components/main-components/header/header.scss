@@ -99,7 +99,7 @@
 			&-block{
 				position: absolute;
 				top: 0;
-				height: 103vh;
+				height: auto;
 				background-color: white;
 				margin-bottom: 0;
 				width: 100%;
@@ -108,7 +108,7 @@
 			&-main{
 				display: flex;
 				justify-content: flex-start;
-				padding: 0;
+				padding: 0 0 10px 0;
 				gap: 20px;
 				width: 95%;
 				margin: 30px auto 0;
@@ -185,13 +185,13 @@
 			}
 			.searchBottom{
 				width: 95%;
-				margin: 0 auto 32px;
+				margin: 0 auto 12px;
 				display: flex;
-				align-items: center;
+				align-items: flex-start;
 				gap: 30px;
 				h1{
 					font-size: 20px;
-					margin-bottom: 15px;
+					margin-bottom: 16px;
 				}
 				.search-left{
 					flex: 1;
@@ -247,15 +247,19 @@
 					ul{
 						display: flex;
 						flex-direction: column;
-						align-items: flex-start;
-						gap: 15px;
+						align-items: center;
+						gap: 10px;
 						padding: 0;
 						li{
 							width: 100%;
 							border-bottom: 2px solid #d2d2d2;
-							padding-bottom: 5px;
+							padding:5px 0 10px 0;
 							&:last-child{
 								border-bottom: none;
+								padding: 0;
+							}
+							&:first-child{
+								padding-top: 0;
 							}
 							button{
 								padding: 0;
@@ -422,6 +426,7 @@ fieldset {
 				}
 				.searchBottom{
 					flex-direction: column-reverse;
+					gap: 20px;
 					.search-left{
 						height: 500px;
 						overflow: scroll;
@@ -546,6 +551,15 @@ fieldset {
 						&::placeholder {
 							font-size: 16px;
 						}
+					}
+				}
+				.searchModal{
+					width: 100%;
+					&-main{
+						width: 90%;
+					}
+					.searchBottom{
+						width: 90%;
 					}
 				}
 

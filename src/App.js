@@ -58,7 +58,7 @@ function App() {
         };
     }, []);
     if (!isOnline) {
-        return <ErrorPage />;
+        return <IsError />;
     }
     return (
         <div className="App">
