@@ -24,17 +24,18 @@ const Header = () => {
 	const [age] = React.useState('')
 	const [searchTerm, setSearchTerm] = useState('');
 	const [suggestions, setSuggestions] = useState([]);
+	const [searchBool,setSearchBool] = useState(true)
 	const location = useLocation()
 	const navigate = useNavigate();
-
 	const goBack = () => {
 		navigate(-1);
 	};
 	const handleInputChange = (event) => {
-		const searchTerm = event.target.value;
-		setSearchTerm(searchTerm);
-		const suggestions = getSuggestions(searchTerm);
-		setSuggestions(suggestions);
+			const searchTerm = event.target.value;
+			setSearchTerm(searchTerm);
+			const suggestions = getSuggestions(searchTerm);
+			setSuggestions(suggestions);
+
 	};
 	const getSuggestions = (searchTerm) => {
 		return newProduct.filter((suggestion) =>
@@ -47,7 +48,10 @@ const Header = () => {
 		const handleResize = () => setWindowWidth(window.innerWidth)
 		window.addEventListener('resize', handleResize)
 		return () => window.removeEventListener('resize', handleResize)
+
 	}, [])
+
+	console.log(suggestions)
 	return (
 		<div className='header'>
 			<Link to={'/'} className='header-logo'>
@@ -100,66 +104,68 @@ const Header = () => {
 
 					</form>
 					{suggestions.length === 0  ? null: searchTerm.length === 0?null:
-						<div className={'searchModal'}>
-							<ul className={'searchModal-main'}>
-								{suggestions.map((suggestion, index) =>{
-										return(
-											<div data-aos="zoom-out"  key={index} className='product-main'>
-												<img src={suggestion.img} alt="" />
-												<div className='product-main-info'>
-													<p>{suggestion.name}</p>
-													<h4>{suggestion.title}</h4>
-													<div className='price'>
-														<div>
-															<p>Цена <span><ArrowDropDownIcon /> {suggestion.percent}</span></p>
-															<h2>{suggestion.price}</h2>
-														</div>
-														<div className='buttons'>
-															<Fab sx={{boxShadow:2}} size="small" color="inherit" aria-label="add">
-																<img src={img2} alt="" />
-															</Fab>
-															<Fab sx={{boxShadow:2}} size="small" color="inherit" aria-label="add">
-																<img src={img1} alt="" />
-															</Fab>
+						<div className={searchBool? 'searchModal active': 'searchModal'} >
+							<div  className={'searchModal-block'}>
+								<ul className={'searchModal-main'}>
+									{suggestions.map((suggestion, index) =>{
+											return(
+												<div data-aos="zoom-out"  key={index} className='product-main'>
+													<img src={suggestion.img} alt="" />
+													<div className='product-main-info'>
+														<p>{suggestion.name}</p>
+														<h4>{suggestion.title}</h4>
+														<div className='price'>
+															<div>
+																<p>Цена <span><ArrowDropDownIcon /> {suggestion.percent}</span></p>
+																<h2>{suggestion.price}</h2>
+															</div>
+															<div className='buttons'>
+																<Fab sx={{boxShadow:2}} size="small" color="inherit" aria-label="add">
+																	<img src={img2} alt="" />
+																</Fab>
+																<Fab sx={{boxShadow:2}} size="small" color="inherit" aria-label="add">
+																	<img src={img1} alt="" />
+																</Fab>
+															</div>
 														</div>
 													</div>
 												</div>
-											</div>
-										)
-									}
-
-								)}
-							</ul>
-							<div className={'searchBottom'}>
-								<div className={'search-left'}>
-									<h1>Обзоры</h1>
-									<div className={'search-left-block'}>
-										{
-											news.map((elem,index) => {
-												return(
-													<div className={'search-left-info'}>
-														<img src={elem.img} alt=""/>
-														<div>
-															<h2>{elem.title}</h2>
-															<p>{elem.text}</p>
-															<button>Смотреть <span><KeyboardArrowRightIcon/></span></button>
-														</div>
-													</div>
-												)
-											})
+											)
 										}
+
+									)}
+								</ul>
+								<div className={'searchBottom'}>
+									<div className={'search-left'}>
+										<h1>Обзоры</h1>
+										<div className={'search-left-block'}>
+											{
+												news.map((elem,index) => {
+													return(
+														<div className={'search-left-info'}>
+															<img src={elem.img} alt=""/>
+															<div>
+																<h2>{elem.title}</h2>
+																<p>{elem.text}</p>
+																<button>Смотреть <span><KeyboardArrowRightIcon/></span></button>
+															</div>
+														</div>
+													)
+												})
+											}
+										</div>
 									</div>
-								</div>
-								<div className={'search-right'}>
-									<h1>Часто ищут</h1>
-									<ul >
-										<li><button>Телевизор</button></li>
-										<li><button>iPhone 14</button></li>
-										<li><button>Планшет</button></li>
-										<li><button>Смартфоны</button></li>
-										<li><button>iPhone</button></li>
-									</ul>
-									<button className={'btn-play'}>Смотреть все результаты <span><KeyboardArrowRightIcon/></span></button>
+									<div className={'search-right'}>
+										<h1>Часто ищут</h1>
+										<ul >
+											<li><button>Телевизор</button></li>
+											<li><button>iPhone 14</button></li>
+											<li><button>Планшет</button></li>
+											<li><button>Смартфоны</button></li>
+											<li><button>iPhone</button></li>
+										</ul>
+										<button className={'btn-play'}>Смотреть все результаты <span><KeyboardArrowRightIcon/></span></button>
+									</div>
 								</div>
 							</div>
 						</div>}
@@ -172,7 +178,7 @@ const Header = () => {
 						<Link to={'/comparison'}><img src={chart} alt="" /></Link>
 					</Button>
 					<Button className='btn' color='inherit' variant="contained" >
-						<Link to={'/error-page'}><img src={profil} alt="" /></Link>
+						<Link to={'/error'}><img src={profil} alt="" /></Link>
 					</Button>
 				</div>
 			</div>

@@ -46,7 +46,7 @@ const BottomNavigate = () => {
                 <img src={img4}/>
                 <p style={{color: location.pathname === '/comparison' ? '#FF4D4D' : '#7E8794'}}>Сравнения</p>
             </Link>
-            <Link to={'/error-page'}>
+            <Link to={'/error'}>
                 <img src={img5}/>
                 <p style={{color: location.pathname === '/profile' ? '#FF4D4D' : '#7E8794'}}>Профиль</p>
             </Link>

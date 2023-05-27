@@ -16,6 +16,7 @@ import 'react-toastify/dist/ReactToastify.css'
 import * as Scroll from 'react-scroll';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import IsError from "./pages/page-404/isError";
 
 function App() {
     const location = useLocation()
@@ -69,6 +70,7 @@ function App() {
                 <Route path={'/info-product'} element={<InfoProductPage/>}/>
                 <Route path={'/review'} element={<ReviewPage/>}/>
                 <Route path={'/error-page'} element={<ErrorPage/>}/>
+                <Route path={'/error'} element={<IsError/>}/>
             </Routes>
             <div className={'footers'}>
                 <Footer/>
