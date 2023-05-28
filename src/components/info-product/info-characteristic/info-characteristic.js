@@ -68,8 +68,8 @@ const InfoCharacteristic = ({visibleProducts}) => {
                                             {open ? <ExpandLess/> : <ExpandMore/>}
                                         </ListItemButton>
                                         <Collapse  in={open} timeout="auto" unmountOnExit>
-                                            <List component="div" disablePadding>
-                                                <ListItemButton sx={{paddingTop:'10px'}}>
+                                            <List component="div" >
+                                                <ListItemButton sx={{paddingTop:'10px',paddingLeft:0,paddingRight:0,paddingBottom:0}}>
                                                     <ListItem/>
                                                 </ListItemButton>
                                             </List>

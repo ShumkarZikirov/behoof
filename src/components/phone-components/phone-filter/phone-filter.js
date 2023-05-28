@@ -199,7 +199,7 @@ function PhoneFilter() {
                                     <FormGroup>
                                         <FormControlLabel
                                             control={<IOSSwitch sx={{m: 1}} defaultChecked/>}
-                                            label="iOS style"
+                                            label="Есть"
                                         />
                                     </FormGroup>
                                 </div>
