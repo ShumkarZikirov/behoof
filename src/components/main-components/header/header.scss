@@ -478,7 +478,20 @@ fieldset {
 		}
 	}
 }
-
+//@media only screen and (max-width: 850px){
+//	.header{
+//		.searchModal{
+//			top: 15%;
+//		}
+//	}
+//}
+//@media only screen and (max-width: 550px){
+//	.header{
+//		.searchModal{
+//			top: 21%;
+//		}
+//	}
+//}
 @media only screen and (max-width: 500px) {
 	.header {
 		display: flex;
@@ -554,6 +567,7 @@ fieldset {
 					}
 				}
 				.searchModal{
+					top: 16%;
 					width: 100%;
 					&-main{
 						width: 90%;
@@ -624,13 +638,22 @@ fieldset {
 					}
 				}
 
-
+			.searchModal{
+				top: 15%;
+			}
 			}
 
 			&-btns {
 				display: none;
 			}
 
+		}
+	}
+}
+@media only screen and (max-width: 380px) {
+	.header{
+		.searchModal{
+			top: 16.5%;
 		}
 	}
 }
