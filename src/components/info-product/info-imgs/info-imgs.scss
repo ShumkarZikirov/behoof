@@ -21,6 +21,8 @@
                 top: 30%;
                 button{
                     background-color: #FDFDFD;
+                    width: 45px !important;
+                    height: 45px !important;
                 }
             }
             .imgMax{
@@ -306,7 +308,9 @@
                     top: 50%;
                     button{
                         background-color: #FDFDFD;
-                        width: 30px;
+                        width: 30px !important;
+                        height: 28px !important;
+                        min-height: 30px !important;
                         display: flex;
                         align-items: center;
                         justify-content: center;
