@@ -67,9 +67,9 @@ const InfoCharacteristic = ({visibleProducts}) => {
                                             <ListItemText className={'active-block-btn-text2'} primary={elem.razcamer}/>
                                             {open ? <ExpandLess/> : <ExpandMore/>}
                                         </ListItemButton>
-                                        <Collapse  in={open} timeout="auto" unmountOnExit>
+                                        <Collapse   in={open} timeout="auto" unmountOnExit>
                                             <List component="div" >
-                                                <ListItemButton sx={{paddingTop:'10px',paddingLeft:0,paddingRight:0,paddingBottom:0}}>
+                                                <ListItemButton sx={{padding:0}}>
                                                     <ListItem/>
                                                 </ListItemButton>
                                             </List>
