@@ -567,7 +567,7 @@ fieldset {
 					}
 				}
 				.searchModal{
-					top: 16%;
+					top: 14%;
 					width: 100%;
 					&-main{
 						width: 90%;
@@ -639,7 +639,7 @@ fieldset {
 				}
 
 			.searchModal{
-				top: 15%;
+				top: 17%;
 			}
 			}
 
@@ -647,13 +647,6 @@ fieldset {
 				display: none;
 			}
 
-		}
-	}
-}
-@media only screen and (max-width: 380px) {
-	.header{
-		.searchModal{
-			top: 16.5%;
 		}
 	}
 }
