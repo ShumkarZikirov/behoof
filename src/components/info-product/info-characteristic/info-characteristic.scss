@@ -79,8 +79,11 @@
         }
     }
     .css-13eg511-MuiButtonBase-root-MuiListItemButton-root:hover{
-        padding: 0;
+        padding: 0 !important;
     }
+}
+.css-13eg511-MuiButtonBase-root-MuiListItemButton-root:hover{
+    padding: 0 !important;
 }
 .css-15v8bbv-MuiButtonBase-root-MuiListItemButton-root {
     padding: 10px 0 0 0  !important;
@@ -138,13 +141,16 @@
         }
     }
     .css-13eg511-MuiButtonBase-root-MuiListItemButton-root:hover{
-        padding: 0;
+        padding: 0 !important;
     }
 
 .css-15v8bbv-MuiButtonBase-root-MuiListItemButton-root {
     padding: 10px 0 0 0  !important;
 }
+    .css-13eg511-MuiButtonBase-root-MuiListItemButton-root:hover{
+        padding: 0 !important;
+    }
 .css-13eg511-MuiButtonBase-root-MuiListItemButton-root{
-    padding: 0;
+    padding: 0 !important;
 }
 }

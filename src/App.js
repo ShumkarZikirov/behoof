@@ -40,6 +40,7 @@ function App() {
     useEffect(() => {
         scroll.scrollTo(0, 0)
     }, [pathname]);
+
     useEffect(() => {
         const handleOffline = () => {
             setIsOnline(false);
@@ -58,7 +59,7 @@ function App() {
         };
     }, []);
     if (!isOnline) {
-        return <IsError />;
+        return <IsError/>;
     }
     return (
         <div className="App">

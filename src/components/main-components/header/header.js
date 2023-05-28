@@ -24,7 +24,7 @@ const Header = () => {
 	const [age] = React.useState('')
 	const [searchTerm, setSearchTerm] = useState('');
 	const [suggestions, setSuggestions] = useState([]);
-	const [searchBool,setSearchBool] = useState(true)
+	const [searchBool] = useState(true)
 	const location = useLocation()
 	const navigate = useNavigate();
 	const goBack = () => {
@@ -51,7 +51,6 @@ const Header = () => {
 
 	}, [])
 
-	console.log(suggestions)
 	return (
 		<div className='header'>
 			<Link to={'/'} className='header-logo'>
